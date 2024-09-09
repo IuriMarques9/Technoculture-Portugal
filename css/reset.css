@@ -5,6 +5,10 @@
     font: inherit;
     border: 0;
     color: white;
+    font-family: "Gemunu Libre", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 body{
     line-height: 1;
