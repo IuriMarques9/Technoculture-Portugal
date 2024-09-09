@@ -6,6 +6,8 @@
     <title>Technoculture Portugal - Home</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/heroButton.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -19,10 +21,20 @@
     </header>
 
     <main class="mt-[-60px]">
-        <div id="hero" class="h-screen bg-[url('assets/img/hero.jpg')] bg-center bg-cover flex  justify-center items-center">
-            <h1 class="px-6 font-bold text-4xl text-center">Welcome to the portal of Techno culture and music</h1>
+        <div id="hero" class="h-screen bg-[url('assets/img/hero.jpg')] bg-center bg-cover flex flex-col gap-y-20 justify-center items-center">
+            <h1 class="px-6 font-bold text-4xl text-center">Welcome to the portal of Techno music and culture</h1>
 
-            
+            <div class="container">
+                <div class="center">
+                  <button class="btn">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <span class="font-semibold">See what's next</span>
+                  </button>
+                </div>
+            </div>
         </div>
     </main>
         
