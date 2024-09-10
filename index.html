@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technoculture Portugal - Home</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animations.css">
     
-    <!--Css for Hero Button-->
+    <!--Css Buttons-->
     <link rel="stylesheet" href="css/heroButton.css">
+    <link rel="stylesheet" href="css/navButton.css">
     
     <!--'Gemunu Libre' from Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,9 +31,24 @@
     </header>
 
     <nav class="hidden h-full w-full bg-[rgba(0,0,0,0.5)] absolute top-0 z-50 flex justify-end" onclick="if(event.target === this)document.querySelector('#nav').classList.toggle('hidden')" id="nav">
+        <div class="w-[70%] bg-[#590202] fade-right flex flex-col text-end gap-y-4">
+            <div class="flex justify-between p-3">
+                <h1>Menu</h1>
 
-        <div class="w-[70%] bg-[#590202] fade-right">
-            sirfgsnoig
+                <i class="fa fa-xmark content-center" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
+            </div>
+
+            <div class="flex flex-col p-3 gap-y-4">
+                <div class="navbtn">
+                    <a href=""><span>About us</span></a>
+                </div>
+                <div class="navbtn">
+                    <a href=""><span>Contacts</span></a>
+                </div>
+                <div class="navbtn">
+                    <a href=""><span>Gallery</span></a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -46,7 +63,7 @@
                       <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                       <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                     </svg>
-                    <span class="font-semibold">See what's next</span>
+                    <span class="font-semibold tracking-widest">See what's next</span>
                   </button>
                 </div>
             </div>
