@@ -1,3 +1,4 @@
+/*Navigation Buttons*/
 .navbtn{
   display: flex;
   align-items: end;
@@ -22,8 +23,6 @@ span {
   /* z-index coz when we put bg to before and after this span text will not be visible */
   z-index: 3;
 }
-
-/* Button 1 styles */
 
 .navbtn a::before {
   content: "";
@@ -54,8 +53,47 @@ span {
   transition: all 0.5s ease-in-out;
   transform: scaleX(1);
 }
-/* Created by http://grohit.com/  */
 
 .navbtn a:hover::after {
   transform: scaleX(0);
+}
+
+
+/*Hero button*/
+
+#hero svg {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #8C0303;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+#hero:hover svg {
+  stroke-dashoffset: -480;
+}
+
+
+/*Contact us button*/
+
+#sendEmail svg {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #8C0303;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+#sendEmail:hover svg {
+  stroke-dashoffset: -480;
 }

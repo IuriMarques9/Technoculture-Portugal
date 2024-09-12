@@ -11,5 +11,20 @@
     font-style: normal;
 }
 body{
+    border: none;
     line-height: 1;
+}
+input{
+    outline: none;
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    box-shadow: none; 
+}
+textarea{
+    outline: none;
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    box-shadow: none; 
 }
