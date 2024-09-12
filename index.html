@@ -29,7 +29,6 @@
         <i class="content-center fa-solid fa-bars" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
         
     </header>
-
     <nav class="hidden h-[100vh] w-full bg-[rgba(0,0,0,0.5)] fixed top-0 z-50 flex justify-end" onclick="if(event.target === this)document.querySelector('#nav').classList.toggle('hidden')" id="nav">
         <div class="w-[70%] bg-[#590202] fade-right flex flex-col text-end gap-y-4">
             <div class="flex justify-between p-3">
@@ -40,8 +39,8 @@
 
 
             <div class="flex flex-col p-3 gap-y-6">
-                <div class="navbtn">
-                    <a href=""><span>About us</span></a>
+                <div class="navbtn" onclick="document.querySelector('#nav').classList.toggle('hidden')">
+                    <a href="#about"><span>About us</span></a>
                 </div>
                 <div class="navbtn">
                     <a href=""><span>Contacts</span></a>
@@ -61,9 +60,10 @@
         
     </nav>
 
+
     <main class="mt-[-60px]">
         <!--Hero-->
-        <section id="hero" class="h-screen bg-[url('assets/img/hero.jpg')] bg-center bg-cover flex flex-col gap-y-20 justify-center items-center">
+        <section id="hero" class="h-screen bg-[url('assets/img/hero.jpg')] bg-center bg-cover bg-fixed flex flex-col gap-y-20 justify-center items-center">
             <h1 class="px-6 font-extrabold text-4xl text-center">Welcome to the portal of Techno music and culture</h1>
 
             <div class="container">
@@ -80,12 +80,53 @@
         </section>
 
         <!--About us-->
-        <section id="about">
-
+        <section id="about" class="bg-black px-4 py-8">
+            <h2 class="font-[] text-3xl font-extrabold text-center">About us</h2>
+            
+            <p class="text-justify my-5">
+                Techno Culture Portugal it’s a non-profit organization dedicated to promoting and expanding the culture of techno music in Portugal through events.
+                Founded in 2019, our institution has been dedicated to creating unique musical experiences and supporting emerging artists in the electronic music scene. Nowadays our collective is composed of DJs, producers, organizations, artists and electronic music enthusiasts who share a common passion for Techno culture and music.
+                We already organize a variety of events, from underground parties to outdoor festivals always aiming to provide unforgettable experiences for our participants.
+            </p>
+            
+            <img src="assets/img/logo_grande.png" alt="" class="w-9/12 mx-auto">
         </section>
+
+        <div class="h-[200px] bg-[url('assets/img/dj.jpg')] bg-center bg-fixed bg-contain bg-no-repeat blur-[1px]">
+            
+        </div>
     </main>
         
     <footer class="bg-[#590202] p-4 z-0 flex flex-col gap-y-4">
+        <div id="logos">
+            <img src="assets/img/logo_grande.png"  alt="Technoculture Logo">
+
+            <img src="assets/img/nomadas.png" width="150px" alt="Nomadas Logo">
+        </div>
+        
+        <div id="location">
+            <h5>Rua Justice Row Nº15</h5>
+            <h5>Faro, Portugal 8800-000</h5>
+        </div>
+
+        <div id="social" class="flex gap-x-4">
+            <i class="fa-brands fa-facebook cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+            <i class="fa-brands fa-instagram cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+            <i class="fa-brands fa-whatsapp cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+            <i class="fa-brands fa-youtube cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+    </div>
+
+        <div id="contacts">
+            <h5>Tel: (+351) 966 666 666</h5>
+            <h5>Email: technoculturept@gmail.com</h5>
+        </div>
+
+        <hr class="text-[#8C0303]">
+        
+        <h6 class="self-center text-sm"><span class="font-sans">&reg</span> 2025 por Technoculture Portugal.</h6>
+
+    </footer>
+    <footer class="bg-[#590202] p-4 z-0 flex flex-col gap-y-4"></footer>
         <div id="logos">
             <img src="assets/img/logo_grande.png"  alt="Technoculture Logo">
 

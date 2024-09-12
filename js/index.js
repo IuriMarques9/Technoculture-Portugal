@@ -1,3 +1,4 @@
+//#region Header Background color change when scroll down */
 const header  = document.querySelector('#header');
 
 window.addEventListener('scroll',  function(){
@@ -7,3 +8,5 @@ window.addEventListener('scroll',  function(){
         header.classList.remove('!bg-[#590202]');
     }
 })
+//#endregion
+
