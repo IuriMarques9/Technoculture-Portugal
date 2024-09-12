@@ -25,17 +25,17 @@
 </head>
 <body>
     <header id="header" class="h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 z-50 transition duration-500">
-        <img src="assets/img/logo.jpg" alt="">
+        <a href="#home" class="cursor-pointer"><img width="35px" src="assets/img/logo.jpg" alt="Logo"></a>
 
-        <i class="content-center fa-solid fa-bars" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
+        <i class="content-center fa-solid fa-bars cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
         
     </header>
     <nav class="hidden h-[100vh] w-full bg-[rgba(0,0,0,0.5)] fixed top-0 z-50 flex justify-end" onclick="if(event.target === this)document.querySelector('#nav').classList.toggle('hidden')" id="nav">
         <div class="w-[70%] bg-[#590202] fade-right flex flex-col text-end gap-y-4">
             <div class="flex justify-between p-3">
-                <h1>Menu</h1>
+                <h3 class="font-extrabold text-lg">Menu</h1>
 
-                <i class="fa fa-xmark content-center" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
+                <i class="fa fa-xmark content-center cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
             </div>
 
 
@@ -67,17 +67,7 @@
         <section id="hero" class="h-screen bg-[url('assets/img/hero.jpg')] bg-center bg-cover bg-fixed flex flex-col gap-y-20 justify-center items-center">
             <h1 class="px-6 font-extrabold text-4xl text-center">Welcome to the portal of Techno music and culture</h1>
 
-            <div class="containerHero">
-                <div class="centerHero">
-                  <button class="btnHero">
-                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="borderHero">
-                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-lineHero" />
-                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-lineHero" />
-                    </svg>
-                    <span class="font-semibold tracking-widest text-white">See what's next</span>
-                  </button>
-                </div>
-            </div>
+            
         </section>
 
         <!--About us-->
@@ -109,17 +99,7 @@
                     <textarea id="message" form="sendEmail" class="bg-[#8C0303] indent-2 py-1 min-h-[100px]" placeholder="Message"></textarea>
                 </div>
 
-                <div class="containerSendEmail">
-                    <div class="centerSendEmail">
-                      <button class="btnSendEmail">
-                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="borderSendEmail">
-                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-lineSendEmail" />
-                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-lineSendEmail" />
-                        </svg>
-                        <span class="font-semibold tracking-widest text-white">Send</span>
-                      </button>
-                    </div>
-                </div>       
+                  
             </form>
         </section>
 
