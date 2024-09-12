@@ -67,17 +67,17 @@
         <section id="hero" class="h-screen bg-[url('assets/img/hero.jpg')] bg-center bg-cover bg-fixed flex flex-col gap-y-20 justify-center items-center">
             <h1 class="px-6 font-extrabold text-4xl text-center">Welcome to the portal of Techno music and culture</h1>
 
-            <div class="flex justify-center items-center">
-                <div class="w-[180px] h-[60px] absolute">
-                    <button class="w-[180px] h-[60px] cursor-pointer bg-[rgba(38,1,1,0.2)] border-2 border-solid border-[#260101] outline-0 transition duration-1000 ease-in-out hover:bg-[#260101]">
-                        <svg viewBox="0 0 180 60">
-                            <polyline points="179,1 179,59 1,59 1,1 179,1" />
-                            <polyline points="179,1 179,59 1,59 1,1 179,1" />
-                        </svg>
-                        <span class="font-semibold tracking-widest text-white text-sm">See what's next</span>
-                    </button>
+            <div class="containerHero">
+                <div class="centerHero">
+                  <button class="btnHero">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="borderHero">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-lineHero" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-lineHero" />
+                    </svg>
+                    <span class="font-semibold tracking-widest text-white">See what's next</span>
+                  </button>
                 </div>
-            </div>  
+            </div>
         </section>
 
         <!--About us-->
@@ -94,7 +94,7 @@
         </section>
 
         <!--Image-->
-        <div class="h-[200px] bg-[url('assets/img/outdoor.jpg')] bg-center bg-fixed bg-cover bg-no-repeat blur-[1px]"></div>
+        <div class="h-[200px] bg-[url('assets/img/outdoor.jpg')] bg-center bg-fixed bg-cover bg-no-repeat"></div>
 
         <!--Contact us-->
         <section id="contactUs" class="bg-black px-4 py-8">
@@ -109,17 +109,17 @@
                     <textarea id="message" form="sendEmail" class="bg-[#8C0303] indent-2 py-1 min-h-[100px]" placeholder="Message"></textarea>
                 </div>
 
-                <div class="flex justify-center items-center mt-9">
-                    <div class="w-full h-[40px] absolute ">
-                        <button class="w-full h-[40px] cursor-pointer bg-[rgba(38,1,1,0.2)] border-2 border-solid border-[#260101] outline-0 transition duration-1000 ease-in-out hover:bg-[#260101]">
-                            <svg viewBox="0 0 180 60">
-                                <polyline points="179,1 179,59 1,59 1,1 179,1" />
-                                <polyline points="179,1 179,59 1,59 1,1 179,1" />
-                            </svg>
-                            <span class="font-semibold tracking-widest text-white text-sm">Send</span>
-                        </button>
+                <div class="containerSendEmail">
+                    <div class="centerSendEmail">
+                      <button class="btnSendEmail">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="borderSendEmail">
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-lineSendEmail" />
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-lineSendEmail" />
+                        </svg>
+                        <span class="font-semibold tracking-widest text-white">Send</span>
+                      </button>
                     </div>
-                </div>        
+                </div>       
             </form>
         </section>
 
