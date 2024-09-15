@@ -59,7 +59,7 @@ span {
 }
 
 
-/*Hero button*/
+/*Hero and Form button*/
 .btnfos {
   cursor: pointer;
   display: block;
@@ -67,7 +67,6 @@ span {
   font-weight: 600;
   line-height: 45px;
   position: relative;
-  vertical-align: middle;
 }
 .btnfos-2 {
   letter-spacing: 1px;

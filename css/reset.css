@@ -13,6 +13,7 @@
 body{
     border: none;
     line-height: 1;
+    background-color: black;
 }
 input{
     outline: none;
