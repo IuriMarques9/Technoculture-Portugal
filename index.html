@@ -26,7 +26,7 @@
 <body>
     
     <header id="header" class="h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 z-50 transition duration-500">
-        <a href="#home" class="cursor-pointer"><img width="35px" src="assets/img/logo.jpg" alt="Logo"></a>
+        <a href="#hero" class="cursor-pointer"><img width="35px" src="assets/img/logo.jpg" alt="Logo"></a>
 
         <i class="content-center fa-solid fa-bars cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
         
@@ -63,8 +63,8 @@
     </nav>
 
     <!--Button to top-->
-    <div onclick="window.scrollTo(0, 0)" class="w-[45px] h-[45px] fixed bottom-5 right-5 text-center rounded-3xl bg-gradient-to-l from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-110">
-        <i class="fa fa-arrow-up"></i>
+    <div onclick="window.scrollTo(0, 0)" class="w-[35px] h-[35px] fixed bottom-5 right-5 text-center rounded-3xl bg-gradient-to-l from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-110">
+        <i class="fa fa-arrow-up text-sm"></i>
     </div>
 
     <main class="mt-[-60px]">
@@ -96,12 +96,28 @@
             <h2 class="font-[] text-3xl font-extrabold text-center">Gallery</h2>
             
             <div class="my-5 flex flex-col items-center gap-6">
-                <div class=" w-3/5 h-[200px] bg-[url('assets/img/cartaz_lagoa_FIMEL.jpg')] bg-contain bg-center bg-no-repeat opacity-60"></div>
+                <div class="flex items-end w-3/5 h-[180px] bg-[url('assets/img/cartaz_lagoa_FIMEL.jpg')] bg-cover bg-center bg-no-repeat min-w-52">
+                    <div class="bg-[rgba(1,1,1,0.5)] w-full h-full flex items-end"> <!--Opacity layer-->
+                        <div class="px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
+                            <h6 class="text-sm text-nowrap">Convent' Bio (Lagoa)</h6>
+    
+                            <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
+                        </div>
+                    </div>
+                </div>
 
-                <div class=" w-3/5 h-[200px] bg-[url('assets/img/cartaz_olhao.jpg')] bg-contain bg-center bg-no-repeat opacity-60"></div>
+                <div class="flex items-end w-3/5 h-[180px] bg-[url('assets/img/cartaz_olhao.jpg')] bg-cover bg-center bg-no-repeat min-w-52">
+                    <div class="bg-[rgba(1,1,1,0.5)] w-full h-full flex items-end"> <!--Opacity layer-->
+                        <div class="px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
+                            <h6 class="text-sm text-nowrap">Docks Warehouse (Olhão)</h6>
+    
+                            <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
+                        </div>
+                    </div>
+                </div>
 
-                <button class="max-w-96 w-3/5">
-                    <a class="btnfos btnfos-2 text-center bg-[rgba(38,1,1,0.2)]">See More</a> 
+                <button class="max-w-96 w-3/5 min-w-32">
+                    <a class="btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]">See More</a> 
                 </button>
             </div>
 
@@ -123,7 +139,7 @@
                 </div>
 
                 <button class="w-full mt-3">
-                    <a class="btnfos btnfos-2 text-center bg-[rgba(38,1,1,0.2)]">Send</a> 
+                    <a class="btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]">Send</a> 
                 </button>
             </form>
         </section>
