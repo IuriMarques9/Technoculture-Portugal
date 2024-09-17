@@ -63,7 +63,7 @@
     </nav>
 
     <!--Button to top-->
-    <div onclick="window.scrollTo(0, 0)" class="w-[35px] h-[35px] fixed bottom-5 right-5 text-center rounded-full bg-gradient-to-l from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-110">
+    <div onclick="window.scrollTo(0, 0)" class="w-[35px] h-[35px] fixed bottom-5 right-5 text-center rounded-full bg-gradient-to-l from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-110 z-50">
         <i class="fa fa-arrow-up text-sm"></i>
     </div>
 
@@ -92,45 +92,38 @@
         <div class="h-[200px] bg-[url('assets/img/armazem.jpg')] bg-center bg-fixed bg-cover bg-no-repeat"></div>
 
         <!--Gallery-->
-        <section id="gallery" class="bg-black px-4 py-8">
+        <section id="gallery" class="bg-black px-2 py-8">
             <h2 class="font-[] text-3xl font-extrabold text-center">Gallery</h2>
             
             <div class="my-5 flex flex-col items-center gap-6">
-                
-                <a href="#gallery" class="w-3/5 h-[180px] min-w-52">
+                <a href="#gallery" name="card" class="w-3/5 h-[180px] min-w-52">
                     <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
-                        <div class="rounded hover:scale-110 h-full w-full bg-cover bg-center bg-no-repeat transition duration-500 bg-[url('assets/img/cartaz_olhao.jpg')]">
-                            <div class="rounded bg-[rgba(1,1,1,0.5)] w-full h-full flex items-end"> <!--Opacity layer-->
-                                <div class="rounded-b px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
-                                    <h6 class="text-sm text-nowrap">Docks Warehouse (Olhão)</h6>
+                        <img src="assets/img/cartaz_olhao.jpg" alt="Docks Warehouse Party" class="hover:scale-110 rounded h-full w-full transition duration-500 opacity-70">
+
+                        <div class="relative bottom-[40px] flex items-end rounded-b px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
+                            <h6 class="text-sm text-nowrap">Docks Warehouse (Olhão)</h6>
             
-                                    <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
-                                </div>
-                            </div>
+                            <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
                         </div>
                     </div>
                 </a>
-
-                <a href="#gallery" class="w-3/5 h-[180px] min-w-52">
+                <a href="#gallery" name="card" class="w-3/5 h-[180px] min-w-52">
                     <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
-                        <div class="hover:scale-110 rounded h-full w-full bg-cover bg-center bg-no-repeat transition duration-500 bg-[url('assets/img/cartaz_lagoa_FIMEL.jpg')]">
-                            <div class="rounded bg-[rgba(1,1,1,0.5)] w-full h-full flex items-end"> <!--Opacity layer-->
-                                <div class=" rounded-b px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
-                                    <h6 class="text-sm text-nowrap">Convent' Bio (Lagoa)</h6>
-            
-                                    <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#gallery" class="w-3/5 h-[180px] min-w-52">
-                    <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
-                        <img src="assets/img/cartaz_lagoa_FIMEL.jpg" alt="" class="hover:scale-110 rounded h-full w-full transition duration-500 opacity-50">
+                        <img src="assets/img/cartaz_lagoa_FIMEL.jpg" alt="F.I.M.E.L Party" class="hover:scale-110 rounded h-full w-full transition duration-500 opacity-70">
 
                         <div class="relative bottom-[40px] flex items-end rounded-b px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
                             <h6 class="text-sm text-nowrap">Convent' Bio (Lagoa)</h6>
+            
+                            <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#gallery" name="card" class="w-3/5 h-[180px] min-w-52">
+                    <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
+                        <img src="assets/img/cartaz_1st_year.jpg" alt="1st Year Party" class="hover:scale-110 rounded h-full w-full transition duration-500 opacity-70">
+
+                        <div class="relative bottom-[40px] flex items-end rounded-b px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
+                            <h6 class="text-sm text-nowrap">1st Year Party</h6>
             
                             <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
                         </div>

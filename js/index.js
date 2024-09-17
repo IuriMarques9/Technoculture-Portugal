@@ -10,3 +10,15 @@ window.addEventListener('scroll',  function(){
 })
 //#endregion
 
+//#region Image scale from animated cards
+const cards = document.getElementsByName('card');
+for(let i = 0; i< cards.length; i++){
+    const content = cards[i].children[0].children[1];
+    content.addEventListener("mouseover",  function(){
+        cards[i].children[0].children[0].classList.add('scale-110')
+    });
+    content.addEventListener("mouseout",  function(){
+        cards[i].children[0].children[0].classList.remove('scale-110')
+    });
+}
+//#endregion
