@@ -44,11 +44,14 @@
                 <div class="navbtn" onclick="document.querySelector('#nav').classList.toggle('hidden')">
                     <a href="#about"><span>About us</span></a>
                 </div>
-                <div class="navbtn">
+                <div class="navbtn" onclick="document.querySelector('#nav').classList.toggle('hidden')">
                     <a href="#gallery"><span>Gallery</span></a>
                 </div>
-                <div class="navbtn">
+                <div class="navbtn" onclick="document.querySelector('#nav').classList.toggle('hidden')">
                     <a href="#contactUs"><span>Contact us</span></a>
+                </div>
+                <div class="navbtn" onclick="document.querySelector('#nav').classList.toggle('hidden')">
+                    <a href="#"><span>See what's next</span></a>
                 </div>
             </div>
 
@@ -63,7 +66,7 @@
     </nav>
 
     <!--Button to top-->
-    <div onclick="window.scrollTo(0, 0)" class="w-[35px] h-[35px] fixed bottom-5 right-5 text-center rounded-full bg-gradient-to-l from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-110 z-50">
+    <div onclick="window.scrollTo(0, 0)" class="w-[35px] h-[35px] fixed bottom-5 right-5 text-center rounded-full bg-gradient-to-t from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition-all ease-in-out duration-400 hover:scale-110 z-40">
         <i class="fa fa-arrow-up text-sm"></i>
     </div>
 
@@ -77,7 +80,7 @@
 
         <!--About us-->
         <section id="about" class="bg-black px-4 py-8">
-            <h2 class="font-[] text-3xl font-extrabold text-center">About us</h2>
+            <h2 class="text-3xl font-extrabold text-center">About us</h2>
             
             <p class="text-justify my-5">
                 Techno Culture Portugal it’s a non-profit organization dedicated to promoting and expanding the culture of techno music in Portugal through events.
@@ -93,43 +96,45 @@
 
         <!--Gallery-->
         <section id="gallery" class="bg-black px-2 py-8">
-            <h2 class="font-[] text-3xl font-extrabold text-center">Gallery</h2>
+            <h2 class="text-3xl font-extrabold text-center">Gallery</h2>
             
-            <div class="my-5 flex flex-col items-center gap-6">
-                <a href="#gallery" name="card" class="w-3/5 h-[180px] min-w-52">
-                    <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
-                        <img src="assets/img/cartaz_olhao.jpg" alt="Docks Warehouse Party" class="hover:scale-110 rounded h-full w-full transition duration-500 opacity-70">
-
-                        <div class="relative bottom-[40px] flex items-end rounded-b px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
-                            <h6 class="text-sm text-nowrap">Docks Warehouse (Olhão)</h6>
-            
-                            <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#gallery" name="card" class="w-3/5 h-[180px] min-w-52">
-                    <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
-                        <img src="assets/img/cartaz_lagoa_FIMEL.jpg" alt="F.I.M.E.L Party" class="hover:scale-110 rounded h-full w-full transition duration-500 opacity-70">
-
-                        <div class="relative bottom-[40px] flex items-end rounded-b px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
-                            <h6 class="text-sm text-nowrap">Convent' Bio (Lagoa)</h6>
-            
-                            <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#gallery" name="card" class="w-3/5 h-[180px] min-w-52">
-                    <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
-                        <img src="assets/img/cartaz_1st_year.jpg" alt="1st Year Party" class="hover:scale-110 rounded h-full w-full transition duration-500 opacity-70">
-
-                        <div class="relative bottom-[40px] flex items-end rounded-b px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
-                            <h6 class="text-sm text-nowrap">1st Year Party</h6>
-            
-                            <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
-                        </div>
-                    </div>
-                </a>
+            <div class="flex flex-col items-center">
+                <div class="my-5 flex flex-wrap justify-center gap-6 w-full">
+                    <a href="#gallery" name="card" class="w-3/5 h-[180px] min-w-52 max-w-80">
+                        <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
+                            <img src="assets/img/cartaz_olhao.jpg" alt="Docks Warehouse Party" class="hover:scale-110 rounded h-full w-full transition duration-500 opacity-70">
+    
+                            <div class="relative bottom-[40px] flex items-end rounded-b px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
+                                <h6 class="text-sm text-nowrap">Docks Warehouse (Olhão)</h6>
                 
+                                <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#gallery" name="card" class="w-3/5 h-[180px] min-w-52 max-w-80">
+                        <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
+                            <img src="assets/img/cartaz_lagoa_FIMEL.jpg" alt="F.I.M.E.L Party" class="hover:scale-110 rounded h-full w-full transition duration-500 opacity-70">
+    
+                            <div class="relative bottom-[40px] flex items-end rounded-b px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
+                                <h6 class="text-sm text-nowrap">Convent' Bio (Lagoa)</h6>
+                
+                                <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#gallery" name="card" class="w-3/5 h-[180px] min-w-52 max-w-80">
+                        <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
+                            <img src="assets/img/cartaz_1st_year.jpg" alt="1st Year Party" class="hover:scale-110 rounded h-full w-full transition duration-500 opacity-70">
+    
+                            <div class="relative bottom-[40px] flex items-end rounded-b px-3 py-2 w-full h-[40px] bg-[rgba(38,1,1,0.9)] rounded-t-xl flex items-end justify-between ">
+                                <h6 class="text-sm text-nowrap">1st Year Party</h6>
+                
+                                <p class="text-[0.6em] text-[#777777] text-nowrap">24-09-2024</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
                 <button class="max-w-96 w-3/5 min-w-32">
                     <a class="btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]">See More</a> 
                 </button>
@@ -142,7 +147,7 @@
 
         <!--Contact us-->
         <section id="contactUs" class="bg-black px-4 py-8">
-            <h2 class="font-[] text-3xl font-extrabold text-center">Contact us</h2>
+            <h2 class="text-3xl font-extrabold text-center">Contact us</h2>
 
             <form action="" id="sendEmail" class="w-full my-4">
                 <div class="flex flex-col gap-y-3">
@@ -160,7 +165,7 @@
 
     </main>
         
-    <footer class="bg-[#590202] p-4 z-0 flex flex-col gap-y-4">
+    <footer class="bg-gradient-to-b from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% p-4 z-0 flex flex-col gap-y-4">
         <div id="logos">
             <img src="assets/img/logo_grande.png"  alt="Technoculture Logo">
 
