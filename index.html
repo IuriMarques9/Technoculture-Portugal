@@ -66,20 +66,20 @@
     </nav>
 
     <!--Button to top-->
-    <div onclick="window.scrollTo(0, 0)" class="w-[35px] h-[35px] fixed bottom-5 right-5 text-center rounded-full bg-gradient-to-t from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition-all ease-in-out duration-400 hover:scale-110 z-40">
-        <i class="fa fa-arrow-up text-sm"></i>
+    <div onclick="window.scrollTo(0, 0)" class="lg:w-[60px] lg:h-[60px] w-[35px] h-[35px] fixed bottom-5 right-5 text-center rounded-full bg-gradient-to-t from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition-all ease-in-out duration-400 hover:scale-110 z-40">
+        <i class="lg:text-2xl fa fa-arrow-up text-sm"></i>
     </div>
 
     <main class="mt-[-60px]">
         <!--Hero-->
         <section id="hero" class="h-screen bg-[url('assets/img/hero.jpg')] bg-center bg-cover bg-fixed flex flex-col gap-y-20 justify-center items-center">
-            <h1 class="px-6 font-extrabold text-4xl text-center">Welcome to the portal of Techno music and culture</h1>
+            <h1 class="xl:text-7xl lg:text-5xl px-6 font-extrabold text-4xl text-center">Welcome to the portal of Techno music and culture</h1>
 
             <a class="btnfos btnfos-2 text-center w-2/4 bg-[rgba(38,1,1,0.2)]">See what's next</a> 
         </section>
 
         <!--About us-->
-        <section id="about" class="bg-black px-4 py-8">
+        <section id="about" class="bg-black px-4 py-8 max-w-4xl mx-auto">
             <h2 class="text-3xl font-extrabold text-center">About us</h2>
             
             <p class="text-justify my-5">
@@ -92,7 +92,7 @@
         </section>
 
         <!--Image-->
-        <div class="h-[200px] bg-[url('assets/img/armazem.jpg')] bg-center bg-fixed bg-cover bg-no-repeat"></div>
+        <div class="lg:h-[600px] h-[200px] bg-[url('assets/img/armazem.jpg')] bg-center bg-fixed bg-cover bg-no-repeat"></div>
 
         <!--Gallery-->
         <section id="gallery" class="bg-black px-2 py-8">
@@ -143,21 +143,21 @@
         </section>
 
         <!--Image-->
-        <div class="h-[200px] bg-[url('assets/img/outdoor.jpg')] bg-center bg-fixed bg-cover bg-no-repeat"></div>
+        <div class="lg:h-[600px] h-[200px] bg-[url('assets/img/outdoor.jpg')] bg-center bg-fixed bg-cover bg-no-repeat"></div>
 
         <!--Contact us-->
         <section id="contactUs" class="bg-black px-4 py-8">
             <h2 class="text-3xl font-extrabold text-center">Contact us</h2>
 
-            <form action="" id="sendEmail" class="w-full my-4">
-                <div class="flex flex-col gap-y-3">
-                    <input type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm" placeholder="Name">
-                    <input type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm" placeholder="Email">
-           
-                    <textarea id="message" form="sendEmail" class="bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm" placeholder="Message"></textarea>
-                </div>
+            <form action="" id="sendEmail" class="w-full my-4 max-w-4xl mx-auto">
 
-                <button class="w-full mt-3">
+                <div class=" flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:h-[45px] ">
+                    <input type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full" placeholder="Name">
+                    <input type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full" placeholder="Email">
+                </div>
+                <textarea id="message" form="sendEmail" class="bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full " placeholder="Message"></textarea>
+
+                <button class="w-full">
                     <a class="btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]">Send</a> 
                 </button>
             </form>
