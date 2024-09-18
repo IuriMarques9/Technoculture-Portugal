@@ -66,39 +66,41 @@
     </nav>
 
     <!--Button to top-->
-    <div onclick="window.scrollTo(0, 0)" class="lg:w-[60px] lg:h-[60px] w-[35px] h-[35px] fixed bottom-5 right-5 text-center rounded-full bg-gradient-to-t from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition-all ease-in-out duration-400 hover:scale-110 z-40">
-        <i class="lg:text-2xl fa fa-arrow-up text-sm"></i>
+    <div onclick="window.scrollTo(0, 0)" class="md:w-[45px] md:h-[45px] lg:w-[60px] lg:h-[60px] w-[35px] h-[35px] fixed bottom-5 right-5 text-center rounded-full bg-gradient-to-t from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition-all ease-in-out duration-400 hover:scale-110 z-40">
+        <i class="md:text-lg lg:text-2xl fa fa-arrow-up text-sm"></i>
     </div>
 
     <main class="mt-[-60px]">
         <!--Hero-->
-        <section id="hero" class="h-screen bg-[url('assets/img/hero.jpg')] bg-center bg-cover bg-fixed flex flex-col gap-y-20 justify-center items-center">
-            <h1 class="xl:text-7xl lg:text-5xl px-6 font-extrabold text-4xl text-center">Welcome to the portal of Techno music and culture</h1>
+        <section id="hero" class=" h-screen bg-[url('assets/img/hero.jpg')] bg-center bg-cover bg-fixed flex flex-col gap-y-20 justify-center items-center">
+            <h1 class="lg:max-w-6xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl px-6 font-extrabold text-4xl text-center">Welcome to the portal of Techno music and culture</h1>
 
-            <a class="btnfos btnfos-2 text-center w-2/4 bg-[rgba(38,1,1,0.2)]">See what's next</a> 
+            <a class="lg:max-w-6xl btnfos btnfos-2 text-center w-2/4 bg-[rgba(38,1,1,0.2)]">See what's next</a> 
         </section>
 
         <!--About us-->
-        <section id="about" class="bg-black px-4 py-8 max-w-4xl mx-auto lg:my-16">
+        <section id="about" class="bg-black px-12 py-8 max-w-4xl mx-auto md:my-8 lg:my-16">
             <h2 class="text-3xl font-extrabold text-center">About us</h2>
             
-            <p class="text-justify my-5 sm:text-lg md:text-xl lg:text-2xl md:my-8 lg:my-16">
+            <p class="text-justify my-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl md:my-8 lg:my-16">
                 Techno Culture Portugal it’s a non-profit organization dedicated to promoting and expanding the culture of techno music in Portugal through events.
                 Founded in 2019, our institution has been dedicated to creating unique musical experiences and supporting emerging artists in the electronic music scene. Nowadays our collective is composed of DJs, producers, organizations, artists and electronic music enthusiasts who share a common passion for Techno culture and music.
                 We already organize a variety of events, from underground parties to outdoor festivals always aiming to provide unforgettable experiences for our participants.
             </p>
             
-            <img src="assets/img/logo_grande.png" alt="" class="w-[250px] mx-auto sm:w-[300px] md:w-[450px]">
+            <img src="assets/img/logo_grande.png" alt="" class="w-[250px] mx-auto sm:w-[300px] md:w-[450px] xl:w-[500px]">
         </section>
 
         <!--Image-->
         <div class="lg:h-[600px] h-[200px] bg-[url('assets/img/armazem.jpg')] bg-center bg-fixed bg-cover bg-no-repeat"></div>
 
         <!--Gallery-->
-        <section id="gallery" class="bg-black px-2 py-8 md:my-8 lg:my-16">
+        <section id="gallery" class=" bg-black px-12 py-8 md:my-8 lg:my-16">
             <h2 class="text-3xl font-extrabold text-center">Gallery</h2>
             
-            <div class="flex flex-col items-center sm:mt-5 md:mt-8 lg:mt-16">
+            <p class="md:my-8 lg:my-12 max-w-4xl text-justify my-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto">Each photo is an invitation to relive good moments. Here you can explore and remember the memories you experienced at each event with our photo gallery.</p>
+
+            <div class="flex flex-col items-center">
                 <div class="my-5 flex flex-wrap justify-center gap-6 w-full">
                     <a href="#gallery" name="card" class="w-3/5 h-[180px] min-w-52 max-w-80">
                         <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
@@ -146,26 +148,44 @@
         <div class="lg:h-[600px] h-[200px] bg-[url('assets/img/outdoor.jpg')] bg-center bg-fixed bg-cover bg-no-repeat"></div>
 
         <!--Contact us-->
-        <section id="contactUs" class="bg-black px-4 py-8 md:my-8 lg:my-16">
+        <section id="contactUs" class="bg-black px-12 py-8 md:my-8 lg:my-16">
             <h2 class="text-3xl font-extrabold text-center">Contact us</h2>
 
             <form action="" id="sendEmail" class="w-full my-4 max-w-4xl mx-auto sm:mt-5 md:mt-8 lg:mt-16">
 
                 <div class=" flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:h-[45px] ">
-                    <input type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-lg md:text-xl lg:text-2xl sm:placeholder:text-lg md:placeholder:text-xl lg:placeholder:text-2xl " placeholder="Name">
-                    <input type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-lg md:text-xl lg:text-2xl sm:placeholder:text-lg md:placeholder:text-xl lg:placeholder:text-2xl" placeholder="Email">
+                    <input type="text" class="shadow-inner bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-lg md:text-xl lg:text-2xl xl:text-3xl sm:placeholder:text-lg md:placeholder:text-xl lg:placeholder:text-2xl xl:placeholder:text-3xl" placeholder="Name">
+                    <input type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-lg md:text-xl lg:text-2xl xl:text-3xl sm:placeholder:text-lg md:placeholder:text-xl lg:placeholder:text-2xl xl:placeholder:text-3xl" placeholder="Email">
                 </div>
-                <textarea id="message" form="sendEmail" class="bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full md:h-[30vh] sm:text-lg md:text-xl lg:text-2xl sm:placeholder:text-lg md:placeholder:text-xl lg:placeholder:text-2xl" placeholder="Message"></textarea>
+                <textarea id="message" form="sendEmail" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full md:h-[30vh] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl sm:placeholder:text-lg md:placeholder:text-xl lg:placeholder:text-2xl xl:placeholder:text-3xl" placeholder="Message"></textarea>
 
-                <button class="w-full">
-                    <a class="btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]">Send</a> 
+                <button class="w-full btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]">
+                    Send
                 </button>
             </form>
         </section>
 
     </main>
+    
+    <!--NewsLetter-->
+    <div id="newsletter" class="bg-[#8C0303] px-4 py-6 translate-y-[1px]">
+        <div class="lg:items-start flex flex-col gap-y-4 max-w-7xl items-center">
+            <h2 class="text-3xl font-extrabold mt-2">Newsletter</h2>
+            
+            <p class="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Subscribe to our newsletter to stay up to date with the latest events and discounts.</p>
+            
+            <form action="" class="sm:flex-row flex flex-col gap-3 mb-4 w-full">
+                <input type="email" class="sm:w-3/4 shadow-inner bg-[rgba(38,1,1,0.2)] w-full indent-2 py-1 rounded-sm sm:w-full sm:text-lg md:text-xl lg:text-2xl xl:text-3xl sm:placeholder:text-lg md:placeholder:text-xl lg:placeholder:text-2xl xl:placeholder:text-3xl" placeholder="Email">
+    
+                <button type="submit" class="sm:w-1/4 btnfos btnfos-2 text-center bg-[rgba(38,1,1,0.2)] w-full">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <footer class="bg-gradient-to-b from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% p-4 z-0 flex flex-col gap-y-6">
+        <hr class="border-[#260101]">
         
-    <footer class="bg-gradient-to-b from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% p-4 z-0 flex flex-col gap-y-4">
         <div id="logos">
             <img src="assets/img/logo_grande.png"  alt="Technoculture Logo">
 
@@ -173,7 +193,7 @@
 
             <img src="assets/img/structually-unsound.png" width="150px" alt="structually unsound Logo">
         </div>
-        
+
         <div id="location">
             <h5>Rua Justice Row Nº15</h5>
             <h5>Faro, Portugal 8800-000</h5>
@@ -191,11 +211,13 @@
             <h5>Email: technoculturept@gmail.com</h5>
         </div>
 
-        <hr class="text-[#8C0303]">
-        
-        <h6 class="self-center text-sm"><span class="font-sans">&reg</span> 2025 por Technoculture Portugal.</h6>
-
     </footer>
+
+    <div class="bg-[#260101] px-4">
+        <hr class="border-[#8C0303]">
+
+        <h6 class="text-center text-sm py-3"><span class="font-sans">&reg</span> 2025 por Technoculture Portugal.</h6>
+    </div>
 
     <!--JavaScript file-->
     <script src="js/index.js"></script>
