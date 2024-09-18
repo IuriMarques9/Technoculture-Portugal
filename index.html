@@ -183,38 +183,43 @@
     </div>
     
     <!--Footer-->
-    <footer class="bg-gradient-to-b from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% p-4 z-0 flex flex-col gap-y-6">
-        <hr class="border-[#260101]">
+    <footer class="bg-gradient-to-b from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% p-4 z-0 flex flex-col gap-y-8">
+        <hr class="border-[#260101] border">
         
-        <div id="logos">
-            <img src="assets/img/logo_grande.png"  alt="Technoculture Logo">
-
-            <img src="assets/img/nomadas.png" width="150px" alt="Nomadas Logo">
-
-            <img src="assets/img/structually-unsound.png" width="150px" alt="structually unsound Logo">
+        <div id="logos" class="sm:flex sm:justify-evenly sm:gap-x-4">
+            <img src="assets/img/logo_grande.png" class="w-[200px] sm:w-[150px] md:w-[200px] lg:w-[250px]" alt="Technoculture Logo">
+            
+            <img src="assets/img/structually-unsound.png" class="w-[100px] sm:w-[70px] md:w-[130px] lg:w-[150px]" alt="structually unsound Logo">
+            
+            <img src="assets/img/nomadas.png" class="w-[200px] sm:w-[150px] md:w-[200px] lg:w-[250px]" alt="Nomadas Logo">
         </div>
+        
+        <div class="sm:justify-evenly sm:flex-row flex flex-col gap-y-3 sm:mt-5">
+            <div id="location">
+                <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Rua Justice Row Nº15</h5>
+                <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Faro, Portugal 8800-000</h5>
+            </div>
 
-        <div id="location">
-            <h5>Rua Justice Row Nº15</h5>
-            <h5>Faro, Portugal 8800-000</h5>
+            <div id="left" class="border border-[#8C0303]"></div>
+
+            <div id="social" class="flex gap-x-4">
+                <i class="sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-facebook cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-instagram cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-whatsapp cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-youtube cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+            </div>
+    
+            <div id="right" class="border border-[#8C0303]"></div>
+
+            <div id="contacts">
+                <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Tel: (+351) 966 666 666</h5>
+                <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Email: technoculturept@gmail.com</h5>
+            </div>
         </div>
-
-        <div id="social" class="flex gap-x-4">
-            <i class="fa-brands fa-facebook cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
-            <i class="fa-brands fa-instagram cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
-            <i class="fa-brands fa-whatsapp cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
-            <i class="fa-brands fa-youtube cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
-        </div>
-
-        <div id="contacts">
-            <h5>Tel: (+351) 966 666 666</h5>
-            <h5>Email: technoculturept@gmail.com</h5>
-        </div>
-
     </footer>
 
     <div class="bg-[#260101] px-4">
-        <hr class="border-[#8C0303]">
+        <hr class="border-[#8C0303] border-[0.5px]">
 
         <h6 class="text-center text-sm py-3"><span class="font-sans">&reg</span> 2025 por Technoculture Portugal.</h6>
     </div>

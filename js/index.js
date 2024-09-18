@@ -22,3 +22,18 @@ for(let i = 0; i< cards.length; i++){
     });
 }
 //#endregion
+
+//#region Show/Hide footer divisory (<div>)
+const divLeft = document.querySelector('#left');
+const divRight = document.querySelector('#right');
+
+addEventListener("resize", () => {
+    if(window.innerWidth < 640){
+        divLeft.classList.add('hidden');
+        divRight.classList.add('hidden');
+    }else{
+        divLeft.classList.remove('hidden');
+        divRight.classList.remove('hidden');
+    }
+})
+//#endregion
