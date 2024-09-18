@@ -25,12 +25,37 @@
 </head>
 <body>
     
-    <header id="header" class="h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 z-50 transition duration-500">
-        <a href="#hero" class="cursor-pointer"><img width="35px" src="assets/img/logo.jpg" alt="Logo"></a>
+    <header id="header" class="sm:px-3 md:px-8 sm:h-[100px] h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 z-50 transition duration-500">
+        <a href="#hero" class="sm:w-[200px] w-[30px] content-center cursor-pointer"><img class="w-full" id="logo" alt="Logo"></a>
 
-        <i class="content-center fa-solid fa-bars cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
+        <i id="iconMenu" class="content-center fa-solid fa-bars cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
         
+        <!--Nav for devices bigger than mobile-->
+        <div id="navBiggerDevices" class="w-full flex justify-between">
+            <div class="flex p-3 gap-x-3 grow">
+                <div class="navbtn flex justify-center">
+                    <a class="before:bg-[#590202] after:bg-[#590202]" href="#about"><span class="text-xs lg:text-base">About us</span></a>
+                </div>
+                <div class="navbtn flex justify-center" >
+                    <a class="before:bg-[#590202] after:bg-[#590202]" href="#gallery"><span class="text-xs lg:text-base">Gallery</span></a>
+                </div>
+                <div class="navbtn flex justify-center">
+                    <a class="before:bg-[#590202] after:bg-[#590202]" href="#contactUs"><span class="text-xs lg:text-base">Contact us</span></a>
+                </div>
+                <div class="navbtn flex justify-center">
+                    <a class="before:bg-[#590202] after:bg-[#590202]" href="#"><span class="text-xs lg:text-base">Next events</span></a>
+                </div>
+            </div>
+
+            <div id="navSocial" class="sm:gap-x-3 lg:gap-x-4 flex justify-evenly gap-x-2">
+                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-facebook cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-instagram cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-whatsapp cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-youtube cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
+            </div>
+        </div>
     </header>
+    <!--Nav for mobile-->
     <nav class="hidden h-[100vh] w-full bg-[rgba(0,0,0,0.5)] fixed top-0 z-50 flex justify-end" onclick="if(event.target === this)document.querySelector('#nav').classList.toggle('hidden')" id="nav">
         <div class="w-[70%] bg-[#590202] fade-right flex flex-col text-end gap-y-4">
             <div class="flex justify-between p-3">
@@ -62,15 +87,15 @@
                 <i class="fa-brands fa-youtube cursor-pointer content-center text-2xl transition ease-in-out duration-400 hover:scale-125"></i>
             </div>
         </div>
-        
     </nav>
 
+
     <!--Button to top-->
-    <div onclick="window.scrollTo(0, 0)" class="md:w-[45px] md:h-[45px] lg:w-[60px] lg:h-[60px] w-[35px] h-[35px] fixed bottom-5 right-5 text-center rounded-full bg-gradient-to-t from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition-all ease-in-out duration-400 hover:scale-110 z-40">
+    <div id="toTop" onclick="window.scrollTo(0, 0)" class="invisible md:w-[45px] md:h-[45px] lg:w-[60px] lg:h-[60px] w-[35px] h-[35px] fixed bottom-5 right-5 text-center rounded-full bg-gradient-to-t from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-110 z-40">
         <i class="md:text-lg lg:text-2xl fa fa-arrow-up text-sm"></i>
     </div>
 
-    <main class="mt-[-60px]">
+    <main class="sm:mt-[-100px] mt-[-60px]">
         <!--Hero-->
         <section id="hero" class=" h-screen bg-[url('assets/img/hero.jpg')] bg-center bg-cover bg-fixed flex flex-col gap-y-20 justify-center items-center">
             <h1 class="lg:max-w-6xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl px-6 font-extrabold text-4xl text-center">Welcome to the portal of Techno music and culture</h1>
@@ -154,10 +179,10 @@
             <form action="" id="sendEmail" class="w-full my-4 max-w-4xl mx-auto sm:mt-5 md:mt-8 lg:mt-16">
 
                 <div class=" flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:h-[45px] ">
-                    <input type="text" class="shadow-inner bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-lg md:text-xl lg:text-2xl xl:text-3xl sm:placeholder:text-lg md:placeholder:text-xl lg:placeholder:text-2xl xl:placeholder:text-3xl" placeholder="Name">
-                    <input type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-lg md:text-xl lg:text-2xl xl:text-3xl sm:placeholder:text-lg md:placeholder:text-xl lg:placeholder:text-2xl xl:placeholder:text-3xl" placeholder="Email">
+                    <input type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Name">
+                    <input type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
                 </div>
-                <textarea id="message" form="sendEmail" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full md:h-[30vh] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl sm:placeholder:text-lg md:placeholder:text-xl lg:placeholder:text-2xl xl:placeholder:text-3xl" placeholder="Message"></textarea>
+                <textarea id="message" form="sendEmail" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full md:h-[30vh] sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Message"></textarea>
 
                 <button class="w-full btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]">
                     Send
@@ -168,11 +193,11 @@
     </main>
     
     <!--NewsLetter-->
-    <div id="newsletter" class="bg-[#8C0303] px-4 py-6 translate-y-[1px]">
+    <div id="newsletter" class="sm:px-3 bg-[#8C0303] px-4 py-6 translate-y-[1px]">
         <div class="lg:items-start flex flex-col gap-y-4 max-w-7xl items-center">
             <h2 class="text-3xl font-extrabold mt-2">Newsletter</h2>
             
-            <p class="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">Subscribe to our newsletter to stay up to date with the latest events and discounts.</p>
+            <p class="sm:text-lg lg:text-xl xl:text-2xl">Subscribe to our newsletter to stay up to date with the latest events and discounts.</p>
             
             <form action="" class="sm:flex-row flex flex-col gap-3 mb-4 w-full">
                 <input type="email" class="sm:w-3/4 shadow-inner bg-[rgba(38,1,1,0.2)] w-full indent-2 py-1 rounded-sm sm:w-full sm:text-lg md:text-xl lg:text-2xl xl:text-3xl sm:placeholder:text-lg md:placeholder:text-xl lg:placeholder:text-2xl xl:placeholder:text-3xl" placeholder="Email">
@@ -186,7 +211,7 @@
     <footer class="bg-gradient-to-b from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% p-4 z-0 flex flex-col gap-y-8">
         <hr class="border-[#260101] border">
         
-        <div id="logos" class="sm:flex sm:justify-evenly sm:gap-x-4">
+        <div id="logos" class="sm:flex sm:justify-around sm:gap-x-4">
             <img src="assets/img/logo_grande.png" class="w-[200px] sm:w-[150px] md:w-[200px] lg:w-[250px]" alt="Technoculture Logo">
             
             <img src="assets/img/structually-unsound.png" class="w-[100px] sm:w-[70px] md:w-[130px] lg:w-[150px]" alt="structually unsound Logo">

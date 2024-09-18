@@ -6,7 +6,7 @@
 }
 
 .navbtn a {
-  border: 2px solid #010100;
+  border: 2px solid #000000;
   width: 150px;
   padding: 10px 0px;
   text-align: center;
@@ -57,6 +57,20 @@ span {
 .navbtn a:hover::after {
   transform: scaleX(0);
 }
+
+@media only screen and (min-width: 640px) {
+  .navbtn{
+    width: 100%;
+  }
+  
+  .navbtn a {
+    width: 100%;
+    padding: 2px 0px;
+  }
+}
+
+
+
 
 
 /*Hero and Form button*/
