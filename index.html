@@ -28,10 +28,19 @@
     <header id="header" class="sm:px-3 md:px-8 sm:h-[100px] h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 z-50 transition duration-500">
         <a href="#hero" class="sm:w-[200px] w-[30px] content-center cursor-pointer"><img class="w-full" id="logo" alt="Logo"></a>
 
-        <i id="iconMenu" class="content-center fa-solid fa-bars cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
+        <div id="menuIconAndSocial" class="hidden flex gap-x-6">
+            <div id="navSocial" class="sm:gap-x-3 lg:gap-x-4 flex justify-evenly gap-x-3">
+                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-facebook cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-instagram cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-whatsapp cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-youtube cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
+            </div>
+    
+            <i id="iconMenu" class="text-xl content-center fa-solid fa-bars cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
+        </div>
         
         <!--Nav for devices bigger than mobile-->
-        <div id="navBiggerDevices" class="w-full flex justify-between">
+        <div id="navBiggerDevices" class="hidden w-full flex justify-between max-w-2xl">
             <div class="flex p-3 gap-x-3 grow">
                 <div class="navbtn flex justify-center">
                     <a class="before:bg-[#590202] after:bg-[#590202]" href="#about"><span class="text-xs lg:text-base">About us</span></a>
@@ -45,13 +54,6 @@
                 <div class="navbtn flex justify-center">
                     <a class="before:bg-[#590202] after:bg-[#590202]" href="#"><span class="text-xs lg:text-base">Next events</span></a>
                 </div>
-            </div>
-
-            <div id="navSocial" class="sm:gap-x-3 lg:gap-x-4 flex justify-evenly gap-x-2">
-                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-facebook cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-instagram cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-whatsapp cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-youtube cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
             </div>
         </div>
     </header>
@@ -78,13 +80,6 @@
                 <div class="navbtn" onclick="document.querySelector('#nav').classList.toggle('hidden')">
                     <a href="#"><span>See what's next</span></a>
                 </div>
-            </div>
-
-            <div id="navSocial" class="flex justify-evenly mt-auto">
-                <i class="fa-brands fa-facebook cursor-pointer content-center text-2xl transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="fa-brands fa-instagram cursor-pointer content-center text-2xl transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="fa-brands fa-whatsapp cursor-pointer content-center text-2xl transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="fa-brands fa-youtube cursor-pointer content-center text-2xl transition ease-in-out duration-400 hover:scale-125"></i>
             </div>
         </div>
     </nav>
