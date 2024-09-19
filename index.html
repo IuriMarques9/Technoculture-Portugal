@@ -36,7 +36,7 @@
                 <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-youtube cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
             </div>
     
-            <i id="iconMenu" class="text-xl content-center fa-solid fa-bars cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
+            <i id="iconMenu" class="text-xl content-center fa-solid fa-bars cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#navMobile').classList.toggle('hidden')"></i>
         </div>
         
         <!--Nav for devices bigger than mobile-->
@@ -47,42 +47,44 @@
                 </div>
                 
                 <div class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#about"><span class="text-xs lg:text-base">Gallery</span></a>
+                    <a class=" " href="#gallery"><span class="text-xs lg:text-base">Gallery</span></a>
                 </div>
                 
                 <div class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#about"><span class="text-xs lg:text-base">Contact us</span></a>
+                    <a class=" " href="#contactUs"><span class="text-xs lg:text-base">Contact us</span></a>
                 </div>
                 
                 <div class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#about"><span class="text-xs lg:text-base">Next events</span></a>
+                    <a class=" " href="#"><span class="text-xs lg:text-base">Next events</span></a>
                 </div>
                 
             </div>
         </div>
     </header>
     <!--Nav for mobile-->
-    <nav class="hidden h-[100vh] w-full bg-[rgba(0,0,0,0.5)] fixed top-0 z-50 flex justify-end" onclick="if(event.target === this)document.querySelector('#nav').classList.toggle('hidden')" id="nav">
-        <div class="w-[70%] bg-[#590202] fade-right flex flex-col text-end gap-y-4">
+    <nav class="hidden h-[100vh] w-full bg-[rgba(0,0,0,0.5)] fixed top-0 z-50 flex justify-end" onclick="if(event.target === this)document.querySelector('#navMobile').classList.toggle('hidden')" id="navMobile">
+        <div class="w-[55%] bg-[#590202] fade-right flex flex-col text-end gap-y-4">
             <div class="flex justify-between p-3">
                 <h3 class="font-extrabold text-lg">Menu</h1>
 
-                <i class="fa fa-xmark content-center cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#nav').classList.toggle('hidden')"></i>
+                <i class="fa fa-xmark content-center cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#navMobile').classList.toggle('hidden')"></i>
             </div>
 
 
-            <div class="flex flex-col p-3 gap-y-6">
-                <div class="navbtn" onclick="document.querySelector('#nav').classList.toggle('hidden')">
-                    <a href="#about"><span>About us</span></a>
+            <div class="flex flex-col items-center p-3 gap-y-6">
+                <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
+                    <a class=" " href="#about"><span class="text-xs lg:text-base">About us</span></a>
                 </div>
-                <div class="navbtn" onclick="document.querySelector('#nav').classList.toggle('hidden')">
-                    <a href="#gallery"><span>Gallery</span></a>
+                <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
+                    <a class=" " href="#gallery"><span class="text-xs lg:text-base">Gallery</span></a>
                 </div>
-                <div class="navbtn" onclick="document.querySelector('#nav').classList.toggle('hidden')">
-                    <a href="#contactUs"><span>Contact us</span></a>
+                
+                <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
+                    <a class=" " href="#contactUs"><span class="text-xs lg:text-base">Contact us</span></a>
                 </div>
-                <div class="navbtn" onclick="document.querySelector('#nav').classList.toggle('hidden')">
-                    <a href="#"><span>See what's next</span></a>
+                
+                <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
+                    <a class=" " href="#"><span class="text-xs lg:text-base">Next events</span></a>
                 </div>
             </div>
         </div>
@@ -192,7 +194,7 @@
     </main>
     
     <!--NewsLetter-->
-    <div id="newsletter" class="sm:px-3 bg-[#8C0303] px-4 py-6 translate-y-[1px]">
+    <div id="newsletter" class="md:px-8 sm:px-3 bg-[#8C0303] px-4 py-6 translate-y-[1px]">
         <div class="lg:items-start flex flex-col gap-y-4 max-w-7xl items-center">
             <h2 class="text-3xl font-extrabold mt-2">Newsletter</h2>
             
@@ -226,11 +228,11 @@
 
             <div id="left" class="border border-[#8C0303]"></div>
 
-            <div id="social" class="flex gap-x-4">
-                <i class="sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-facebook cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-instagram cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-whatsapp cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-youtube cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+            <div id="social" class="flex gap-x-4 h-fit self-center">
+                <i class="hover:text-[#007bff] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-facebook cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="hover:text-black sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-instagram cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="hover:text-[#14ed04] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-whatsapp cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="hover:text-[#c40300] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-youtube cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
             </div>
     
             <div id="right" class="border border-[#8C0303]"></div>
