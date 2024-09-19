@@ -32,7 +32,7 @@ span {
   width: calc(100% + 6px);
   /*100% plus double the times left values*/
   height: calc(100% - 10px);
-  background-color: #590202;
+  background-color: #090302;
   transition: all 0.5s ease-in-out;
   transform: scaleY(1);
 }
@@ -49,7 +49,7 @@ span {
   width: calc(100% - 10px);
   /*100% plus double the times left values*/
   height: calc(100% + 10px);
-  background-color: #590202;
+  background-color: #090302;
   transition: all 0.5s ease-in-out;
   transform: scaleX(1);
 }
