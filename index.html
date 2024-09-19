@@ -177,15 +177,15 @@
         <section id="contactUs" class="bg-black px-12 py-8 md:my-8 lg:my-16">
             <h2 class="text-3xl font-extrabold text-center">Contact us</h2>
 
-            <form action="" id="sendEmail" class="w-full my-4 max-w-4xl mx-auto sm:mt-5 md:mt-8 lg:mt-16">
+            <form id="sendEmail" class="w-full my-4 max-w-4xl mx-auto sm:mt-5 md:mt-8 lg:mt-16">
 
                 <div class=" flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:h-[45px] ">
-                    <input type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Name">
-                    <input type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
+                    <input id="nameId" name="name" required type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Name">
+                    <input id="emailId" name="email" required type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
                 </div>
-                <textarea id="message" form="sendEmail" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full md:h-[30vh] sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Message"></textarea>
+                <textarea id="messageId" name="message" required id="message" form="sendEmail" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full md:h-[30vh] sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Message"></textarea>
 
-                <button class="w-full btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]">
+                <button id="buttonEmailSubmitId" type="submit" class="w-full btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]">
                     Send
                 </button>
             </form>
@@ -250,6 +250,9 @@
         <h6 class="text-center text-sm py-3"><span class="font-sans">&reg</span> 2025 por Technoculture Portugal.</h6>
     </div>
 
+    <!--Javascript files to emai service-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/emailService.js"></script>
     <!--JavaScript file-->
     <script src="js/index.js"></script>
 </body>
