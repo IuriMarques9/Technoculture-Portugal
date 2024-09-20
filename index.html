@@ -24,16 +24,15 @@
     
 </head>
 <body>
-    
-    <header id="header" class="sm:gap-x-12 sm:px-3 md:px-8 sm:h-[100px] h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 z-50 transition duration-500">
-        <a href="#hero" class="sm:w-[200px] w-[30px] content-center cursor-pointer"><img class="w-full" id="logo" alt="Logo"></a>
+    <header id="header" class="sm:gap-x-12 sm:px-3 md:px-8 sm:h-[100px] h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 z-50 transition duration-500 items-center">
+        <a href="http://127.0.0.1:5500/index.html#hero" class="sm:w-[150px] md:w-[200px] w-[30px] content-center cursor-pointer"><img class="w-full" id="logo" alt="Logo"></a>
 
         <div id="menuIconAndSocial" class="hidden flex gap-x-6">
             <div id="navSocial" class="sm:gap-x-3 lg:gap-x-4 flex justify-evenly gap-x-3">
                 <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-facebook cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
                 <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-instagram cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
                 <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-whatsapp cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-youtube cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
+                <a class="content-center" href="https://www.youtube.com/@technocultureportugal5731"><i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-youtube cursor-pointer transition ease-in-out duration-400 hover:scale-125"></i></a>
             </div>
     
             <i id="iconMenu" class="text-xl content-center fa-solid fa-bars cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#navMobile').classList.toggle('hidden')"></i>
@@ -42,20 +41,23 @@
         <!--Nav for devices bigger than mobile-->
         <div id="navBiggerDevices" class="hidden w-full flex justify-between items-center max-w-2xl">
             <div class="flex p-3 gap-x-3 grow h-5/6">
-                <div class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#about"><span class="text-xs lg:text-base">About us</span></a>
+                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-fit  flex justify-center items-center">
+                    <a class=" " href="#about"><span class="text-xs lg:text-base text-nowrap">About us</span></a>
                 </div>
                 
-                <div class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#gallery"><span class="text-xs lg:text-base">Gallery</span></a>
+                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
+                    <a class=" " href="#gallery"><span class="text-xs lg:text-base text-nowrap">Gallery</span></a>
                 </div>
                 
-                <div class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#contactUs"><span class="text-xs lg:text-base">Contact us</span></a>
+                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
+                    <a class=" " href="#contactUs"><span class="text-xs lg:text-base text-nowrap">Contact us</span></a>
                 </div>
                 
-                <div class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#"><span class="text-xs lg:text-base">Next events</span></a>
+                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
+                    <a class=" " href="#"><span class="text-xs lg:text-base text-nowrap">Next events</span></a>
+                </div>
+                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
+                    <a class=" " href="#"><span class="text-xs lg:text-base text-nowrap">Faq's</span></a>
                 </div>
                 
             </div>
@@ -105,7 +107,7 @@
         </section>
 
         <!--About us-->
-        <section id="about" class="bg-black px-12 py-8 max-w-4xl mx-auto md:my-8 lg:my-16">
+        <section id="about" class="bg-black py-8 max-w-5xl mx-auto md:my-8 lg:my-16">
             <h2 class="text-3xl font-extrabold text-center">About us</h2>
             
             <p class="text-justify my-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl md:my-8 lg:my-16">
@@ -114,7 +116,8 @@
                 We already organize a variety of events, from underground parties to outdoor festivals always aiming to provide unforgettable experiences for our participants.
             </p>
             
-            <img src="assets/img/logo_grande.png" alt="" class="w-[250px] mx-auto sm:w-[300px] md:w-[450px] xl:w-[500px]">
+            <img src="assets/img/logo_grande.png" alt="" class="inline w-[250px] mx-auto sm:w-[300px] md:w-[450px] xl:w-[500px]">
+            <img src="assets/img/nomadas.png" alt="" class="inline w-[250px] mx-auto sm:w-[300px] md:w-[450px] xl:w-[500px]">
         </section>
 
         <!--Image-->
@@ -177,13 +180,15 @@
         <section id="contactUs" class="bg-black px-12 py-8 md:my-8 lg:my-16">
             <h2 class="text-3xl font-extrabold text-center">Contact us</h2>
 
-            <form id="sendEmail" class="w-full my-4 max-w-4xl mx-auto sm:mt-5 md:mt-8 lg:mt-16">
+            <p class="md:my-8 lg:my-12 max-w-4xl text-justify my-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto">Need to get touch with us? Make sure your question isn’t in the <a class="underline underline-offset-1 hover:text-[#590202] active:text-[#8C0303]" href="#">FAQ's</a> and fill out the form below.</p>
+
+            <form id="contactUsForm" class="w-full my-4 max-w-4xl mx-auto sm:mt-5 md:mt-8 lg:mt-16">
 
                 <div class=" flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:h-[45px] ">
-                    <input id="nameId" name="name" required type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Name">
-                    <input id="emailId" name="email" required type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
+                    <input id="nameId" name="name"  type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Name">
+                    <input id="emailId" name="email"  type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
                 </div>
-                <textarea id="messageId" name="message" required id="message" form="sendEmail" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full md:h-[30vh] sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Message"></textarea>
+                <textarea id="messageId" name="message"  id="message" form="sendEmail" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full md:h-[30vh] sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Message"></textarea>
 
                 <button id="buttonEmailSubmitId" type="submit" class="w-full btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]">
                     Send
@@ -232,7 +237,7 @@
                 <i class="hover:text-[#007bff] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-facebook cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
                 <i class="hover:text-black sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-instagram cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
                 <i class="hover:text-[#14ed04] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-whatsapp cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="hover:text-[#c40300] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-youtube cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
+                <a href="https://www.youtube.com/@technocultureportugal5731"><i class="hover:text-[#c40300] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-youtube cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i></a>
             </div>
     
             <div id="right" class="border border-[#8C0303]"></div>
@@ -250,9 +255,7 @@
         <h6 class="text-center text-sm py-3"><span class="font-sans">&reg</span> 2025 por Technoculture Portugal.</h6>
     </div>
 
-    <!--Javascript files to emai service-->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="js/emailService.js"></script>
+    
     <!--JavaScript file-->
     <script src="js/index.js"></script>
 </body>

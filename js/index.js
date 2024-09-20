@@ -14,8 +14,13 @@ const divLeft = document.querySelector('#left'); /*Footer separator left*/
 const divRight = document.querySelector('#right'); /*Footer separator right*/
 //#endregion
 
-//#region On page load conditional 
-if(window.screen.width < 640){
+//#region On page load conditionals
+if(window.scrollY > 0){
+    header.classList.toggle('!bg-[#590202]');  /*Header background color*/
+    toTopButton.classList.toggle('invisible');
+}
+
+if(window.screen.width < 640 || window.innerWidth < 640){
     logo.src = "assets/img/logo.jpg";  /*Logo for mobile*/
     menuIconAndSocial.classList.remove('hidden');  /*Icon Menu and Social buttons for mobile*/
 
@@ -27,7 +32,7 @@ if(window.screen.width < 640){
 
 //#region On page resize
 addEventListener("resize", () => {
-    if(window.screen.width < 640){
+    if(window.screen.width < 640 || window.innerWidth < 640){
         divLeft.classList.add('hidden'); //Hide left footer separator
         divRight.classList.add('hidden'); //Hide right footer separator
         logo.src = "assets/img/logo.jpg"; //Change logo from top bar
