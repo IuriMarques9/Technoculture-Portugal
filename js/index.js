@@ -15,8 +15,11 @@ const divRight = document.querySelector('#right'); /*Footer separator right*/
 //#endregion
 
 //#region On page load conditionals
+
 if(window.scrollY > 0){
-    header.classList.toggle('!bg-[#590202]');  /*Header background color*/
+    header.classList.toggle('bgHeaderScrollDown');  /*Header background color*/
+    
+    
     toTopButton.classList.toggle('invisible');
 }
 
@@ -55,11 +58,13 @@ addEventListener("resize", () => {
 //#region On page scroll
 window.addEventListener('scroll',  function(){
     if(window.scrollY > 0){
-        header.classList.add('!bg-[#590202]'); //Change header background color when scrolling to top
+        header.classList.add('bgHeaderScrollDown'); //Change header background color when scrolling to top
+
         toTopButton.classList.remove('invisible'); //Show button to page top when scrolling to top
 
     }else{
-        header.classList.remove('!bg-[#590202]'); //Change header background color when scrolling down
+        header.classList.remove('bgHeaderScrollDown'); //Change header background color when scrolling to top
+        
         toTopButton.classList.add('invisible'); //Show button to page top when scrolling down
     }
 })
@@ -78,7 +83,3 @@ for(let i = 0; i< cards.length; i++){
 //#endregion
 
 
-
-//#region Email Service
-
-//#endregion

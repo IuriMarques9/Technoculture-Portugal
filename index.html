@@ -25,15 +25,15 @@
     
 </head>
 <body>
-    <header id="header" class="sm:gap-x-12 sm:px-3 md:px-8 sm:h-[100px] h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 z-50 transition duration-500 items-center">
+    <header id="header" class="z-50 sm:gap-x-12 sm:px-3 md:px-8 sm:h-[100px] h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 z-5 items-center">
         <a href="http://127.0.0.1:5500/index.html#hero" class="sm:w-[150px] md:w-[200px] w-[30px] content-center cursor-pointer"><img class="w-full" id="logo" alt="Logo"></a>
 
         <div id="menuIconAndSocial" class="hidden flex gap-x-6">
             <div id="navSocial" class="sm:gap-x-3 lg:gap-x-4 flex justify-evenly gap-x-3">
-                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-facebook cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-instagram cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-whatsapp cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
-                <a class="content-center" href="https://www.youtube.com/@technocultureportugal5731"><i class="sm:text-xs md:text-lg lg:text-xl fa-brands fa-youtube cursor-pointer transition ease-in-out duration-400 hover:scale-125"></i></a>
+                <i class="hover:text-[#007bff] sm:text-xs md:text-lg lg:text-xl fa-brands fa-facebook cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="hover:text-black sm:text-xs md:text-lg lg:text-xl fa-brands fa-instagram cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
+                <i class="hover:text-[#14ed04] sm:text-xs md:text-lg lg:text-xl fa-brands fa-whatsapp cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
+                <a class="content-center" href="https://www.youtube.com/@technocultureportugal5731"><i class="hover:text-[#c40300] sm:text-xs md:text-lg lg:text-xl fa-brands fa-youtube cursor-pointer transition ease-in-out duration-400 hover:scale-125"></i></a>
             </div>
     
             <i id="iconMenu" class="text-xl content-center fa-solid fa-bars cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#navMobile').classList.toggle('hidden')"></i>
@@ -58,7 +58,7 @@
                     <a class=" " href="#"><span class="text-xs lg:text-base text-nowrap">Next events</span></a>
                 </div>
                 <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#"><span class="text-xs lg:text-base text-nowrap">Faq's</span></a>
+                    <a class=" " href="index.html"><span class="text-xs lg:text-base text-nowrap">Faq's</span></a>
                 </div>
                 
             </div>
@@ -70,13 +70,13 @@
             <div class="flex justify-between p-3">
                 <h3 class="font-extrabold text-lg">Menu</h1>
 
-                <i class="fa fa-xmark content-center cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#navMobile').classList.toggle('hidden')"></i>
+                <i class="active:text-[#ff0000] fa fa-xmark content-center cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#navMobile').classList.toggle('hidden')"></i>
             </div>
 
 
             <div class="flex flex-col items-center p-3 gap-y-6">
                 <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#about"><span class="text-xs lg:text-base">About us</span></a>
+                    <a class="" href="#about"><span class="text-xs lg:text-base">About us</span></a>
                 </div>
                 <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
                     <a class=" " href="#gallery"><span class="text-xs lg:text-base">Gallery</span></a>
@@ -90,8 +90,8 @@
                     <a class=" " href="#"><span class="text-xs lg:text-base">Next events</span></a>
                 </div>
 
-                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#"><span class="text-xs lg:text-base text-nowrap">Faq's</span></a>
+                <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
+                    <a class=" " href="#"><span class="text-xs lg:text-base">Faq's</span></a>
                 </div>
             </div>
         </div>
@@ -192,10 +192,10 @@
             <form action="https://formsubmit.co/ca8f37c56b4e913c117c7bc7d6b4f0f6" method="post" id="contactUsForm" class="w-full my-4 max-w-4xl mx-auto sm:mt-5 md:mt-8 lg:mt-16">
 
                 <div class=" flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:h-[45px] ">
-                    <input id="nameId" name="Name"  type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Name">
-                    <input id="emailId" name="Email"  type="email" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
+                    <input required id="nameId" name="Name"  type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Name">
+                    <input required id="emailId" name="Email"  type="email" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
                 </div>
-                <textarea id="messageId" name="Message"  id="message" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full md:h-[30vh] sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Message"></textarea>
+                <textarea required id="messageId" name="Message"  id="message" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full md:h-[30vh] sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Message"></textarea>
 
                 <button id="buttonEmailSubmitId" type="submit" class="md:text-[1.125rem] lg:text-[1.25rem] w-full btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]">
                     Send
@@ -218,9 +218,9 @@
             <p class="sm:text-lg lg:text-xl xl:text-2xl">Subscribe to our newsletter to stay up to date with the latest events and discounts.</p>
             
             <form action="https://formsubmit.co/ca8f37c56b4e913c117c7bc7d6b4f0f6" method="post" class="sm:flex-row flex flex-col gap-3 mb-4 w-full">
-                <input name="Email" type="email" class="sm:w-3/4 shadow-inner bg-[rgba(38,1,1,0.2)] w-full indent-2 py-1 rounded-sm sm:w-full sm:text-md md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-md md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
+                <input required name="Email" type="email" class="border-8 sm:w-3/4 shadow-inner bg-[rgba(38,1,1,0.2)] w-full indent-2 py-1 rounded-sm sm:w-full sm:text-md md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-md md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
     
-                <button type="submit" class="md:text-[1.125rem] lg:text-[1.25rem] sm:w-1/4 btnfos btnfos-2 text-center bg-[rgba(38,1,1,0.2)] w-full">Subscribe</button>
+                <button type="submit" class=" md:text-[1.125rem] lg:text-[1.25rem] sm:w-1/4 btnfos btnfos-2 text-center bg-[rgba(38,1,1,0.2)] w-full">Subscribe</button>
             
                 <input type="text" name="_honey" style="display:none">
                 <input type="hidden" name="_subject" value="Newsletter">
@@ -231,7 +231,7 @@
     </div>
     
     <!--Footer-->
-    <footer class="bg-gradient-to-b from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% p-4 z-0 flex flex-col gap-y-8">
+    <footer class="bg-gradient-to-b from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% py-4 z-0 flex flex-col gap-y-8">
         <hr class="border-[#260101] border">
         
         <div id="logos" class="sm:flex sm:justify-around sm:gap-x-4">
@@ -243,25 +243,25 @@
         </div>
         
         <div class="sm:justify-evenly sm:flex-row flex flex-col gap-y-3 sm:mt-5">
-            <div id="location">
-                <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Rua Justice Row Nº15</h5>
-                <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Faro, Portugal 8800-000</h5>
+            <div id="contacts" class="w-1/5">
+                <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Tel: (+351) 966 666 666</h5>
+                <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Email: technoculturept@gmail.com</h5>
             </div>
-
+            
             <div id="left" class="border border-[#8C0303]"></div>
-
-            <div id="social" class="flex gap-x-4 h-fit self-center">
+            
+            <div id="social" class="w-1/5 flex gap-x-4 h-fit self-center justify-center">
                 <i class="hover:text-[#007bff] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-facebook cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
                 <i class="hover:text-black sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-instagram cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
                 <i class="hover:text-[#14ed04] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-whatsapp cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
                 <a href="https://www.youtube.com/@technocultureportugal5731"><i class="hover:text-[#c40300] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-youtube cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i></a>
             </div>
-    
+            
             <div id="right" class="border border-[#8C0303]"></div>
-
-            <div id="contacts">
-                <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Tel: (+351) 966 666 666</h5>
-                <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Email: technoculturept@gmail.com</h5>
+            
+            <div id="location" class="w-1/5">
+                <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Rua Justice Row Nº15</h5>
+                <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl">Faro, Portugal 8800-000</h5>
             </div>
         </div>
     </footer>
