@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet">
+    
     <!--Cdn from Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <!--Cdn from tailwind-->
@@ -87,6 +88,10 @@
                 
                 <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
                     <a class=" " href="#"><span class="text-xs lg:text-base">Next events</span></a>
+                </div>
+
+                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
+                    <a class=" " href="#"><span class="text-xs lg:text-base text-nowrap">Faq's</span></a>
                 </div>
             </div>
         </div>
@@ -184,17 +189,21 @@
 
             <p class="md:my-8 lg:my-12 max-w-4xl text-justify my-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto">If you need to get in touch with us, please do not hesitate to send an email. Simply complete the form below, providing all necessary details, and we will respond to your inquiries as soon as possible.</p>
 
-            <form id="contactUsForm" class="w-full my-4 max-w-4xl mx-auto sm:mt-5 md:mt-8 lg:mt-16">
+            <form action="https://formsubmit.co/ca8f37c56b4e913c117c7bc7d6b4f0f6" method="post" id="contactUsForm" class="w-full my-4 max-w-4xl mx-auto sm:mt-5 md:mt-8 lg:mt-16">
 
                 <div class=" flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:h-[45px] ">
                     <input id="nameId" name="name"  type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Name">
-                    <input id="emailId" name="email"  type="text" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
+                    <input id="emailId" name="email"  type="email" class="bg-[#8C0303] indent-2 py-1 rounded-sm sm:w-full sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
                 </div>
-                <textarea id="messageId" name="message"  id="message" form="sendEmail" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full md:h-[30vh] sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Message"></textarea>
+                <textarea id="messageId" name="message"  id="message" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full md:h-[30vh] sm:text-base md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-base md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Message"></textarea>
 
                 <button id="buttonEmailSubmitId" type="submit" class="md:text-[1.125rem] lg:text-[1.25rem] w-full btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]">
                     Send
                 </button>
+                
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
             </form>
         </section>
 
@@ -257,7 +266,6 @@
         <h6 class="text-center text-sm py-3"><span class="font-sans">&reg</span> 2025 por Technoculture Portugal.</h6>
     </div>
 
-    
     <!--JavaScript file-->
     <script src="js/index.js"></script>
 </body>
