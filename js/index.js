@@ -19,17 +19,19 @@ const divRight = document.querySelector('#right'); /*Footer separator right*/
 if(window.scrollY > 0){
     header.classList.toggle('bgHeaderScrollDown');  /*Header background color*/
     
-    
     toTopButton.classList.toggle('invisible');
 }
 
 if(window.screen.width < 640 || window.innerWidth < 640){
     logo.src = "assets/img/logo.jpg";  /*Logo for mobile*/
     menuIconAndSocial.classList.remove('hidden');  /*Icon Menu and Social buttons for mobile*/
-
+    divLeft.classList.add('hidden'); //Hide left footer separator
+    divRight.classList.add('hidden'); //Hide right footer separator
 }else{
     logo.src = "assets/img/logo_grande.png"; /*Logo for devices bigger than mobile*/
     navBiggerDevices.classList.remove('hidden'); /*Icon Menu and Social buttons for bigger than mobile*/
+    divLeft.classList.remove('hidden'); //Hide left footer separator
+    divRight.classList.remove('hidden'); //Hide right footer separator
 }
 //#endregion
 
