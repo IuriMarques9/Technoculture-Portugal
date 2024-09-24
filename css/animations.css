@@ -1,8 +1,11 @@
-/*Animation for 'Nav for Mobile'*/
-.fade-right{
+/*Fade animations*/
+.fade-right{ /*Class for mobile nav*/
     animation: fade-right 0.50s ease-in-out 0s 1 normal forwards;
 }
-@keyframes fade-right {
+.fade-left{ /*Class for contact us FAQ's*/
+    animation: fade-right 0.50s ease-in-out 0s 1 normal forwards;
+}
+@keyframes fade-right {/*Animation for mobile nav*/
     0%{
         display: none;
         transform: translateX(100%);
@@ -10,5 +13,16 @@
     100%{
         display: flex;
         transform: translateX(0);
+    }
+}
+
+@keyframes fade-left {/*Animation for contact us FAQ's*/
+    0%{
+        display: none;
+        transform: translateX(0);
+    }
+    100%{
+        display: flex;
+        transform: translateX(100%);
     }
 }
