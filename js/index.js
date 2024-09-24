@@ -12,6 +12,8 @@ const cards = document.getElementsByName('card'); /*Gallery cards*/
 
 const divLeft = document.querySelector('#left'); /*Footer separator left*/
 const divRight = document.querySelector('#right'); /*Footer separator right*/
+
+const questions = document.getElementsByName('question'); /*Questions from FAQ's */
 //#endregion
 
 //#region On page load conditionals
@@ -84,4 +86,17 @@ for(let i = 0; i< cards.length; i++){
 }
 //#endregion
 
+//#region FAQ's page collapsibles
+for(i = 0; i < questions.length ;  i++){
+    questions[i].addEventListener("click", function(){
+        this.classList.toggle('!bg-[#590202]');
+        const content =  this.nextElementSibling;
+        if(content.classList.contains('hidden')){
+            content.classList.toggle('hidden');
+        }else{
+            content.classList.toggle('hidden');
+        }
+    })
+}
 
+//#endregion
