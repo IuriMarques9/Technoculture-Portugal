@@ -1,6 +1,7 @@
 //#region Initialized variables
 const logo = document.querySelector('#logo'); /*Logo*/
 const menuIconAndSocial = document.querySelector('#menuIconAndSocial'); /*Icon Menu*/
+const menuSocial = document.querySelector('#social');
 const header = document.querySelector('#header'); /*Header*/
 
 const navBiggerDevices = document.querySelector('#navBiggerDevices'); /*Nav for devices bigger than mobile */
@@ -10,8 +11,7 @@ const toTopButton = document.querySelector('#toTop'); /*Button to top*/
 
 const cards = document.getElementsByName('card'); /*Gallery cards*/
 
-const divLeft = document.querySelector('#left'); /*Footer separator left*/
-const divRight = document.querySelector('#right'); /*Footer separator right*/
+const divFooter = document.querySelector('#divFooter'); /*Footer separator left*/
 
 const questions = document.getElementsByName('question'); /*Questions from FAQ's */
 
@@ -31,34 +31,35 @@ if(window.scrollY > 0){
 if(window.screen.width < 640 || window.innerWidth < 640){
     logo.src = "assets/img/logo.jpg";  /*Logo for mobile*/
     menuIconAndSocial.classList.remove('hidden');  /*Icon Menu and Social buttons for mobile*/
-    divLeft.classList.add('hidden'); //Hide left footer separator
-    divRight.classList.add('hidden'); //Hide right footer separator
+    divFooter.classList.add('hidden'); //Hide footer separator
+    menuSocial.classList.add('hidden')
 }else{
     logo.src = "assets/img/logo_grande.png"; /*Logo for devices bigger than mobile*/
     navBiggerDevices.classList.remove('hidden'); /*Icon Menu and Social buttons for bigger than mobile*/
-    divLeft.classList.remove('hidden'); //Hide left footer separator
-    divRight.classList.remove('hidden'); //Hide right footer separator
+    divFooter.classList.remove('hidden'); //Show footer separator
+    menuSocial.classList.remove('hidden')
 }
 //#endregion
 
 //#region On page resize
 addEventListener("resize", () => {
     if(window.screen.width < 640 || window.innerWidth < 640){
-        divLeft.classList.add('hidden'); //Hide left footer separator
-        divRight.classList.add('hidden'); //Hide right footer separator
+        divFooter.classList.add('hidden'); //Hide left footer separator
         logo.src = "assets/img/logo.jpg"; //Change logo from top bar
 
         menuIconAndSocial.classList.remove('hidden'); //Show hamburguer menu icone and social buttons from top bar
-        navBiggerDevices.classList.add('hidden'); //Hide nav for bigger devices
+        navBiggerDevices.classList.add('hidden'); //Hide nav for bigger devices~
+        
+        menuSocial.classList.add('hidden');
     }
     else{
-        divLeft.classList.remove('hidden'); //Show left footer separator
-        divRight.classList.remove('hidden'); //Show right footer separator
+        divFooter.classList.remove('hidden'); //Show left footer separator
         logo.src = "assets/img/logo_grande.png"; //Change logo from top bar
         menuIconAndSocial.classList.add('hidden'); //Hide hamburguer menu icone and social buttons from top bar
         navBiggerDevices.classList.remove('hidden'); //Show nav for bigger devices
         navMobile.classList.add('hidden'); //Hide mobile nav when screen is bigger than mobile
 
+        menuSocial.classList.remove('hidden');
     }
 })
 //#endregion
