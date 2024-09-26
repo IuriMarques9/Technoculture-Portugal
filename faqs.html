@@ -44,20 +44,8 @@
         <!--Nav for devices bigger than mobile-->
         <div id="navBiggerDevices" class="hidden w-full flex justify-between items-center max-w-2xl">
             <div class="flex p-3 gap-x-3 grow h-5/6">
-                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-fit  flex justify-center items-center">
-                    <a class=" " href="#about"><span class="text-xs lg:text-base text-nowrap">About us</span></a>
-                </div>
-                
                 <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#gallery"><span class="text-xs lg:text-base text-nowrap">Gallery</span></a>
-                </div>
-                
-                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#contactUs"><span class="text-xs lg:text-base text-nowrap">Contact us</span></a>
-                </div>
-                
-                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#"><span class="text-xs lg:text-base text-nowrap">Next events</span></a>
+                    <a class=" " href="/"><span class="text-xs lg:text-base text-nowrap">Home</span></a>
                 </div>
                 <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
                     <a class=" " href="./faqs.html"><span class="text-xs lg:text-base text-nowrap">Faq's</span></a>
@@ -70,28 +58,17 @@
     <nav class="hidden h-[100vh] w-full bg-[rgba(0,0,0,0.5)] fixed top-0 z-50 flex justify-end" onclick="if(event.target === this)document.querySelector('#navMobile').classList.toggle('hidden')" id="navMobile">
         <div class="w-[55%] bg-[#590202] fade-right flex flex-col text-end gap-y-4">
             <div class="flex justify-between p-3">
-                <h3 class="font-extrabold text-lg">Menu</h1>
+                <h3 class="font-extrabold text-lg">FAQ's</h1>
 
                 <i class="active:text-[#ff0000] fa fa-xmark content-center cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#navMobile').classList.toggle('hidden')"></i>
             </div>
 
 
             <div class="flex flex-col items-center p-3 gap-y-6">
-                <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class="" href="#about"><span class="text-xs lg:text-base">About us</span></a>
-                </div>
-                <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#gallery"><span class="text-xs lg:text-base">Gallery</span></a>
+                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
+                    <a class=" " href="/"><span class="text-xs lg:text-base text-nowrap">Home</span></a>
                 </div>
                 
-                <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#contactUs"><span class="text-xs lg:text-base">Contact us</span></a>
-                </div>
-                
-                <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="#"><span class="text-xs lg:text-base">Next events</span></a>
-                </div>
-
                 <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
                     <a class=" " href="./faqs.html"><span class="text-xs lg:text-base">Faq's</span></a>
                 </div>
@@ -119,7 +96,8 @@
             <button id="buttonEmailSubmitId" type="submit" class="md:text-[1.125rem] lg:text-[1.25rem] w-full btnfos btnfos-2 text-center bg-[rgba(13,13,13,0.4)]">
                 Send
             </button>
-                
+               
+            <input type="hidden" name="_next" value="https://iurimarques9.github.io/Technoculture-Portugal/emailSuccess.html">
             <input type="text" name="_honey" style="display:none">
             <input type="hidden" name="_subject" value="Question">
             <input type="hidden" name="_captcha" value="false">
