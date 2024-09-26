@@ -15,7 +15,6 @@ const divRight = document.querySelector('#right'); /*Footer separator right*/
 
 const questions = document.getElementsByName('question'); /*Questions from FAQ's */
 
-const sendEmailButton = document.getElementById('sendEmailButton'); /*Button from contact us FAQ's */
 const sendEmailForm = document.getElementById('contactUsAside'); /*Form from contact us FAQ's */
 const sidePanelChevron = document.getElementById('sidePanelChevron');
 //#endregion
@@ -105,13 +104,15 @@ for(i = 0; i < questions.length ;  i++){
 //#endregion
 
 //#region Send email in FAQ's
-
-sendEmailButton.addEventListener('click', function (){
+function openSidePanel(){
     if(sendEmailForm.classList.contains('fade-left')){
         sendEmailForm.classList.replace('fade-left', 'fade-right');
         sidePanelChevron.classList.replace('fa-chevron-up', 'fa-chevron-down');
-    }else{
+    }else if(sendEmailForm.classList.contains('fade-right')){
         sendEmailForm.classList.replace('fade-right', 'fade-left');
         sidePanelChevron.classList.replace('fa-chevron-down', 'fa-chevron-up');
+    }else{
+        sendEmailForm.classList.add('fade-right');
     }
-});
+}
+//#endregion
