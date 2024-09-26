@@ -16,7 +16,8 @@ const divRight = document.querySelector('#right'); /*Footer separator right*/
 const questions = document.getElementsByName('question'); /*Questions from FAQ's */
 
 const sendEmailForm = document.getElementById('contactUsAside'); /*Form from contact us FAQ's */
-const sidePanelChevron = document.getElementById('sidePanelChevron');
+const sidePanelChevron = document.getElementById('sidePanelChevron');  /*Chevron from side panel */
+
 //#endregion
 
 //#region On page load conditionals
