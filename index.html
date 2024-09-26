@@ -99,7 +99,7 @@
     </div>
 
     <!--Contact us aside-->
-    <aside id="contactUsAside" class="fade-left px-4 w-2/6 sm:w-1/3 rounded-s-xl fixed right-0 top-1/4 z-50 flex flex-col bg-gradient-to-r from-[#590202] to-[#260101]">
+    <aside id="contactUsAside" class="translate-x-full px-4 w-2/6 sm:w-1/3 rounded-s-xl fixed right-0 top-1/4 z-50 flex flex-col bg-gradient-to-r from-[#590202] to-[#260101]">
         <button onclick="openSidePanel()" id="sendEmailButton" class="py-1 text-xs px-5 flex flex-col items-center justify-between -rotate-90 transition ease-in-out duration-400 hover:scale-y-105 hover:scale-x-110 absolute -translate-y-2/4 -left-14 top-2/4 rounded-t-3xl bg-gradient-to-b from-[#8C0303] to-[#590202] cursor-pointer"><i id="sidePanelChevron" class="fa-solid fa-chevron-up"></i>Send email</button>
         
         <form action="https://formsubmit.co/ca8f37c56b4e913c117c7bc7d6b4f0f6" method="post" id="contactUsForm" class="w-full my-4 max-w-4xl mx-auto">
@@ -110,10 +110,11 @@
             </div>
             <textarea required id="messageId" name="message"  id="message" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full sm:h-[30vh] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl placeholder:text-xs sm:placeholder:text-sm md:placeholder:text-base lg:placeholder:text-lg xl:placeholder:text-xl" placeholder="Message"></textarea>
 
-            <button id="buttonEmailSubmitId" type="submit" class="text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] lg:text-[1.125rem] xl:text-[1.25rem] w-full btnfos btnfos-2 text-center bg-[rgba(13,13,13,0.4)]">
-                Send
+            <button onclick="document.querySelector('#sidePanelSpinner').classList.replace('hidden', 'animate-spin')" id="buttonEmailSubmitId" type="submit" class="text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] lg:text-[1.125rem] xl:text-[1.25rem] w-full btnfos btnfos-2 text-center bg-[rgba(13,13,13,0.4)]">
+                <i id="sidePanelSpinner" class="tracking-normal hidden fa-solid fa-spinner"></i> Send
             </button>
                
+            <input type="hidden" name="_next" value="https://iurimarques9.github.io/Technoculture-Portugal/emailSuccess.html">
             <input type="text" name="_honey" style="display:none">
             <input type="hidden" name="_subject" value="Question">
             <input type="hidden" name="_captcha" value="false">
@@ -215,7 +216,9 @@
             <form action="https://formsubmit.co/ca8f37c56b4e913c117c7bc7d6b4f0f6" method="post" class="sm:flex-row flex flex-col gap-3 mb-4 w-full">
                 <input required name="Email" type="email" class="border-8 sm:w-3/4 shadow-inner bg-[rgba(38,1,1,0.2)] w-full indent-2 py-1 rounded-sm sm:w-full sm:text-md md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-md md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
     
-                <button type="submit" class=" md:text-[1.125rem] lg:text-[1.25rem] sm:w-1/4 btnfos btnfos-2 text-center bg-[rgba(38,1,1,0.2)] w-full">Subscribe</button>
+                <button onclick="document.querySelector('#newsletterSpinner').classList.replace('hidden', 'animate-spin')" type="submit" class=" md:text-[1.125rem] lg:text-[1.25rem] sm:w-1/4 btnfos btnfos-2 text-center bg-[rgba(38,1,1,0.2)] w-full">
+                    <i id="newsletterSpinner" class="tracking-normal hidden fa-solid fa-spinner"></i> Subscribe
+                </button>
                 
                 <input type="hidden" name="_next" value="https://iurimarques9.github.io/Technoculture-Portugal/newsletterSuccess.html">
                 <input type="text" name="_honey" style="display:none">

@@ -114,6 +114,7 @@ function openSidePanel(){
         sidePanelChevron.classList.replace('fa-chevron-down', 'fa-chevron-up');
     }else{
         sendEmailForm.classList.add('fade-right');
+        sidePanelChevron.classList.replace('fa-chevron-up', 'fa-chevron-down');
     }
 }
 //#endregion

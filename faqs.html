@@ -93,8 +93,8 @@
             </div>
             <textarea required id="messageId" name="message"  id="message" class=" bg-[#8C0303] indent-2 py-1 min-h-[100px] rounded-sm my-3 w-full sm:h-[30vh] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl placeholder:text-xs sm:placeholder:text-sm md:placeholder:text-base lg:placeholder:text-lg xl:placeholder:text-xl" placeholder="Message"></textarea>
 
-            <button id="buttonEmailSubmitId" type="submit" class="text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] lg:text-[1.125rem] xl:text-[1.25rem] w-full btnfos btnfos-2 text-center bg-[rgba(13,13,13,0.4)]">
-                Send
+            <button onclick="document.querySelector('#sidePanelSpinner').classList.replace('hidden', 'animate-spin')" id="buttonEmailSubmitId" type="submit" class="text-[0.75rem] sm:text-[0.875rem] md:text-[1rem] lg:text-[1.125rem] xl:text-[1.25rem] w-full btnfos btnfos-2 text-center bg-[rgba(13,13,13,0.4)]">
+                <i id="sidePanelSpinner" class="tracking-normal hidden fa-solid fa-spinner"></i> Send
             </button>
                
             <input type="hidden" name="_next" value="https://iurimarques9.github.io/Technoculture-Portugal/emailSuccess.html">
