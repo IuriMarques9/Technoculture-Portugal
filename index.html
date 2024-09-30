@@ -27,7 +27,7 @@
     
 </head>
 <body>
-    <header id="header" class="z-50 md:gap-x-12 sm:gap-x-3 sm:px-3 md:px-8 sm:h-[100px] h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 items-center">
+    <header id="header" class=" z-50 md:gap-x-12 sm:gap-x-3 sm:px-3 md:px-8 sm:h-[100px] h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 items-center">
         <a href="./index.html" class="sm:w-[150px] md:w-[200px] w-[30px] content-center cursor-pointer"><img class="w-full" id="logo" alt="Logo"></a>
 
         <div id="menuIconAndSocial" class="hidden flex gap-x-6">
@@ -46,18 +46,18 @@
             <a class="" href="#nextEvents">
                 <div class="px-5 w-fit sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Next events</span></div>
             </a>
-            <a class="" href="#gallery">
-                <div class="px-5 w-fit sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Gallery</span></div>
-            </a>
             <a class="" href="#about">
                 <div class="px-5 w-fit sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">About us</span></div>
             </a>
-
+            
             <div class="sm:h-[38px] border-[#260101] border"></div>
-
-
+            
+            
             <a class="actualPage" href="./index.html">
                 <div class="px-5 w-fit sm:h-[30px] uppercase tracking-widest transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class=" text-xs lg:text-base text-nowrap">Home</span></div>
+            </a>
+            <a class="" href="./gallery.html">
+                <div class="px-5 w-fit sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Gallery</span></div>
             </a>
             <a class="" href="./faqs.html">
                 <div class="px-5 w-fit sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Faq's</span></div>
@@ -78,17 +78,17 @@
                 <a onclick="document.querySelector('#nav').classList.toggle('hidden')" class="w-10/12 " href="#nextEvents">
                     <div class=" h-[25px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Next events</span></div>
                 </a>
-                <a onclick="document.querySelector('#nav').classList.toggle('hidden')" class="w-10/12" href="#gallery">
-                    <div class="h-[25px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Gallery</span></div>
-                </a>
                 <a onclick="document.querySelector('#nav').classList.toggle('hidden')" class="w-10/12" href="#about">
                     <div class="h-[25px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">About us</span></div>
                 </a>
-
+                
                 <div class="w-full border-[#260101] border"></div>
-
+                
                 <a onclick="document.querySelector('#nav').classList.toggle('hidden')" class="w-10/12" href="./index.html">
                     <div class="h-[25px] actualPage uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101]  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Home</span></div>
+                </a>
+                <a onclick="document.querySelector('#nav').classList.toggle('hidden')" class="w-10/12" href="./gallery.html">
+                    <div class="h-[25px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Gallery</span></div>
                 </a>
                 <a onclick="document.querySelector('#nav').classList.toggle('hidden')" class="w-10/12" href="./faqs.html">
                     <div class="h-[25px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101]  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Faq's</span></div>
@@ -144,7 +144,7 @@
         </section>
         
         <!--Next events-->
-        <section id="nextEvents" class="bg-black px-12 py-8 md:my-8 lg:my-16 flex flex-col items-center gap-y-6 overflow-hidden">
+        <section id="nextEvents" class="bg-[#0D0D0D] px-12 py-8 md:my-8 lg:my-16 flex flex-col items-center gap-y-6 overflow-hidden">
             <h2 class="text-3xl font-extrabold">Next events</h2>
             
             <div class="border border-green-800 ">
@@ -156,12 +156,14 @@
         <div class="lg:h-[600px] h-[200px] bg-[url('assets/img/outdoor.jpg')] bg-center bg-fixed bg-cover bg-no-repeat"></div>
         
         <!--Gallery-->
-        <section id="gallery" class=" bg-black px-12 py-8 md:my-8 lg:my-16">
+        <section id="gallery" class=" bg-[#0D0D0D] px-12 py-8 md:my-8 lg:my-16">
             <h2 class="text-3xl font-extrabold text-center">Gallery</h2>
             
             <p class="md:my-8 lg:my-12 max-w-4xl text-justify my-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto">Each photo is an invitation to relive good moments. Here you can explore and remember the memories you experienced at each event with our photo gallery.</p>
             
+            
             <div class="flex flex-col items-center">
+
                 <div class="my-5 flex flex-wrap justify-center gap-6 w-full">
                     <a href="#gallery" name="card" class="w-3/5 h-[180px] min-w-52 max-w-80">
                         <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
@@ -198,7 +200,7 @@
                     </a>
                 </div>
                 
-                <a class="max-w-96 w-3/5 min-w-32 btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]"><span class="font-bold md:text-[1.125rem] lg:text-[1.25rem]">See More</span></a> 
+                <a href="./gallery.html" class="max-w-96 w-3/5 min-w-32 btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]"><span class="font-bold md:text-[1.125rem] lg:text-[1.25rem]">See More</span></a> 
                 
             </div>
             
@@ -208,7 +210,7 @@
         <div class="lg:h-[600px] h-[200px] bg-[url('assets/img/armazem.jpg')] bg-center bg-fixed bg-cover bg-no-repeat"></div>  
         
         <!--About us-->
-        <section id="about" class="bg-black px-12 py-8 mx-auto md:my-8 lg:my-16 text-center">
+        <section id="about" class="bg-[#0D0D0D] px-12 py-8 mx-auto md:my-8 lg:my-16 text-center">
             <h2 class="text-3xl font-extrabold text-center">About us</h2>
             
             <p class="md:my-8 lg:my-12 max-w-4xl text-justify my-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto">

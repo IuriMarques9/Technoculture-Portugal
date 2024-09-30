@@ -13,7 +13,7 @@
 body{
     border: none;
     line-height: 1;
-    background-color: black;
+    background-color: #0D0D0D;
     min-width: 250px;
 }
 ul, ul li{
