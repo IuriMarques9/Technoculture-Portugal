@@ -32,25 +32,24 @@
 
         <div id="menuIconAndSocial" class="hidden flex gap-x-6">
             <div id="navSocial" class="sm:gap-x-3 lg:gap-x-4 flex justify-evenly gap-x-3">
-                <i class="hover:text-[#007bff] sm:text-xs md:text-lg lg:text-xl fa-brands fa-facebook cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="hover:text-black sm:text-xs md:text-lg lg:text-xl fa-brands fa-instagram cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="hover:text-[#14ed04] sm:text-xs md:text-lg lg:text-xl fa-brands fa-whatsapp cursor-pointer content-center transition ease-in-out duration-400 hover:scale-125"></i>
-                <a class="content-center" href="https://www.youtube.com/@technocultureportugal5731"><i class="hover:text-[#c40300] sm:text-xs md:text-lg lg:text-xl fa-brands fa-youtube cursor-pointer transition ease-in-out duration-400 hover:scale-125"></i></a>
+                <a href=""><i class="hover:text-[#007bff] fa-brands fa-facebook cursor-pointer content-center text-base transition ease-in-out duration-400 hover:scale-125"></i></a>
+                <a href=""><i class="hover:text-[#FB0966] fa-brands fa-instagram cursor-pointer content-center text-base transition ease-in-out duration-400 hover:scale-125"></i></a>
+                <a href=""><i class="hover:text-[#14ed04] fa-brands fa-whatsapp cursor-pointer content-center text-base transition ease-in-out duration-400 hover:scale-125"></i></a>
+                <a href="https://www.youtube.com/@technocultureportugal5731"><i class="hover:text-[#c40300] fa-brands fa-youtube cursor-pointer content-center text-base transition ease-in-out duration-400 hover:scale-125"></i></a>
             </div>
     
             <i id="iconMenu" class="text-xl content-center fa-solid fa-bars cursor-pointer transition ease-in-out duration-400 hover:scale-125" onclick="document.querySelector('#navMobile').classList.toggle('hidden')"></i>
         </div>
         
         <!--Nav for devices bigger than mobile-->
-        <div id="navBiggerDevices" class="hidden w-full flex justify-between items-center max-w-2xl">
-            <div class="flex p-3 gap-x-3 grow h-5/6">
-                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="/"><span class="text-xs lg:text-base text-nowrap">Home</span></a>
-                </div>
-                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="./faqs.html"><span class="text-xs lg:text-base text-nowrap">Faq's</span></a>
-                </div>
-                
+        <div id="navBiggerDevices" class="hidden w-full flex justify-end items-center max-w-2xl">
+            <div class="flex justify-between p-3 h-5/6 gap-x-4">
+                <a class="" href="./index.html">
+                    <div class="px-6 w-fit sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Home</span></div>
+                </a>
+                <a class="" href="./faqs.html">
+                    <div class="px-6 w-fit sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Faq's</span></div>
+                </a>
             </div>
         </div>
     </header>
@@ -64,25 +63,34 @@
             </div>
 
 
-            <div class="flex flex-col items-center p-3 gap-y-6">
-                <div class="px-4 sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="/"><span class="text-xs lg:text-base text-nowrap">Home</span></a>
-                </div>
-
-                <div onclick="document.querySelector('#nav').classList.toggle('hidden')" class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center">
-                    <a class=" " href="./faqs.html"><span class="text-xs lg:text-base">Faq's</span></a>
-                </div>
+            <div class="flex flex-col items-center px-6 gap-y-3">
+                <a onclick="document.querySelector('#nav').classList.toggle('hidden')" class="w-10/12" href="./index.html">
+                    <div class="uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Home</span></div>
+                </a>
+                <a onclick="document.querySelector('#nav').classList.toggle('hidden')" class="w-10/12" href="./faqs.html">
+                    <div class=" uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101]  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Faq's</span></div>
+                </a>
             </div>
         </div>
     </nav>
 
-    <!--Button to top-->
-    <div id="toTop" onclick="window.scrollTo(0, 0)" class="invisible md:w-[45px] md:h-[45px] lg:w-[60px] lg:h-[60px] w-[35px] h-[35px] fixed bottom-5 right-5 text-center rounded-full bg-gradient-to-t from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-110 z-40">
-        <i class="md:text-lg lg:text-2xl fa fa-arrow-up text-sm"></i>
+    <div class="fixed bottom-3 right-2 flex gap-x-3 items-center z-40">
+        <!--Social Menu-->
+        <div id="social" class=" flex gap-3 transition ease-in-out duration-400 opacity-50 ">
+            <a href=""><i class="hover:text-[#007bff] sm:text-xs md:text-sm lg:text-base xl:text-lg fa-brands fa-facebook cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i></a>
+            <a href=""><i class="hover:text-[#FB0966] sm:text-xs md:text-sm lg:text-base xl:text-lg fa-brands fa-instagram cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i></a>
+            <a href=""><i class="hover:text-[#14ed04] sm:text-xs md:text-sm lg:text-base xl:text-lg fa-brands fa-whatsapp cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i></a>
+            <a href="https://www.youtube.com/@technocultureportugal5731"><i class="hover:text-[#c40300] sm:text-xs md:text-sm lg:text-base xl:text-lg fa-brands fa-youtube cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i></a>
+        </div>
+
+        <!--Button to top-->
+        <div id="toTop" onclick="window.scrollTo(0, 0)" class="invisible md:w-[40px] md:h-[40px] lg:w-[55px] lg:h-[55px] w-[30px] h-[30px] text-center rounded-full bg-gradient-to-t from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-110">
+            <i class="md:text-lg lg:text-2xl fa fa-arrow-up text-sm"></i>
+        </div>
     </div>
 
     <!--Contact us aside-->
-    <aside id="contactUsAside" class="fade-left px-4 w-2/6 sm:w-1/3 rounded-s-xl fixed right-0 top-1/4 z-50 flex flex-col bg-gradient-to-r from-[#590202] to-[#260101]">
+    <aside id="contactUsAside" class="translate-x-full px-4 w-2/6 sm:w-1/3 rounded-s-xl fixed right-0 top-1/4 z-50 flex flex-col bg-gradient-to-r from-[#590202] to-[#260101]">
         <button onclick="openSidePanel()" id="sendEmailButton" class="py-1 text-xs px-5 flex flex-col items-center justify-between -rotate-90 transition ease-in-out duration-400 hover:scale-y-105 hover:scale-x-110 absolute -translate-y-2/4 -left-14 top-2/4 rounded-t-3xl bg-gradient-to-b from-[#8C0303] to-[#590202] cursor-pointer"><i id="sidePanelChevron" class="fa-solid fa-chevron-up"></i>Send email</button>
         
         <form action="https://formsubmit.co/ca8f37c56b4e913c117c7bc7d6b4f0f6" method="post" id="contactUsForm" class="w-full my-4 max-w-4xl mx-auto">
@@ -196,16 +204,7 @@
                 <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl text-nowrap">Email: technoculturept@gmail.com</h5>
             </div>
             
-            <div id="left" class="border border-[#8C0303]"></div>
-            
-            <div id="social" class="w-1/5 flex gap-x-4 h-fit sm:self-center sm:justify-center">
-                <i class="hover:text-[#007bff] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-facebook cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="hover:text-black sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-instagram cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
-                <i class="hover:text-[#14ed04] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-whatsapp cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i>
-                <a href="https://www.youtube.com/@technocultureportugal5731"><i class="hover:text-[#c40300] sm:text-sm md:text-md lg:text-lg xl:text-xl fa-brands fa-youtube cursor-pointer content-center text-lg transition ease-in-out duration-400 hover:scale-125"></i></a>
-            </div>
-            
-            <div id="right" class="border border-[#8C0303]"></div>
+            <div id="divFooter" class="border border-[#8C0303]"></div>
             
             <div id="location" class="w-1/5">
                 <h5 class="sm:text-sm md:text-md lg:text-lg xl:text-xl text-nowrap">Rua Justice Row Nº15</h5>

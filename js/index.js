@@ -2,7 +2,7 @@
 const logo = document.querySelector('#logo'); /*Logo*/
 const menuIconAndSocial = document.querySelector('#menuIconAndSocial'); /*Icon Menu*/
 const menuSocial = document.querySelector('#social');
-const header = document.querySelector('#header'); /*Header*/
+const header = document.getElementById('header'); /*Header*/
 
 const navBiggerDevices = document.querySelector('#navBiggerDevices'); /*Nav for devices bigger than mobile */
 const navMobile = document.querySelector('#navMobile'); /*Nav for mobile */
@@ -32,12 +32,12 @@ if(window.screen.width < 640 || window.innerWidth < 640){
     logo.src = "assets/img/logo.jpg";  /*Logo for mobile*/
     menuIconAndSocial.classList.remove('hidden');  /*Icon Menu and Social buttons for mobile*/
     divFooter.classList.add('hidden'); //Hide footer separator
-    menuSocial.classList.add('hidden')
+    menuSocial.classList.add('hidden');
 }else{
     logo.src = "assets/img/logo_grande.png"; /*Logo for devices bigger than mobile*/
     navBiggerDevices.classList.remove('hidden'); /*Icon Menu and Social buttons for bigger than mobile*/
     divFooter.classList.remove('hidden'); //Show footer separator
-    menuSocial.classList.remove('hidden')
+    menuSocial.classList.remove('hidden'); //Show footer separator
 }
 //#endregion
 
