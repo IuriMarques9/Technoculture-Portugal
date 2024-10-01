@@ -22,7 +22,7 @@
     
     <!--Cdn from Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
-    <!--Cdn from tailwind-->
+    <!--Cdn from Tailwind-->
     <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
@@ -139,26 +139,23 @@
     </aside>
 
     
-    <main class="sm:mt-[-100px] mt-[-60px]">
+    <main class="sm:mt-[-100px] mt-[-60px] bg-[url('assets/img/hero.jpg')] bg-center bg-cover bg-fixed flex flex-col">
         <!--Hero-->
-        <section id="hero" class=" text-center h-screen bg-[url('assets/img/hero.jpg')] bg-center bg-cover bg-fixed flex flex-col gap-y-20 justify-center items-center">
+        <section id="hero" class="h-screen text-center flex justify-center items-center">
             <h1 class="w-2/4 lg:max-w-6xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl font-extrabold text-4xl text-center">Welcome to the portal of Techno music and culture</h1>            
         </section>
         
         <!--Next events-->
-        <section id="nextEvents" class="bg-[#0D0D0D] px-12 py-8 md:my-8 lg:my-16 flex flex-col items-center gap-y-6 overflow-hidden">
+        <section id="nextEvents" class="bg-[#0D0D0D]/60 px-12 py-8">
             <h2 class="text-3xl font-extrabold">Next events</h2>
             
-            <div class="border border-green-800 ">
-                
-            </div>
+            
         </section>
         
-        <!--Image-->
-        <div class="lg:h-[600px] h-[200px] bg-[url('assets/img/outdoor.jpg')] bg-center bg-fixed bg-cover bg-no-repeat"></div>
+       
         
         <!--Gallery-->
-        <section id="gallery" class=" bg-[#0D0D0D] px-12 py-8 md:my-8 lg:my-16">
+        <section id="gallery" class=" bg-[#0D0D0D]/60 px-12 py-8">
             <h2 class="text-3xl font-extrabold text-center">Gallery</h2>
             
             <p class="md:my-8 lg:my-12 max-w-4xl text-justify my-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto">Each photo is an invitation to relive good moments. Here you can explore and remember the memories you experienced at each event with our photo gallery.</p>
@@ -202,17 +199,15 @@
                     </a>
                 </div>
                 
-                <a href="./gallery.html" class="max-w-96 w-3/5 min-w-32 btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.2)]"><span class="font-bold md:text-[1.125rem] lg:text-[1.25rem]">See More</span></a> 
+                <a href="./gallery.html" class="max-w-96 w-3/5 min-w-32 btnfos btnfos-2 text-center bg-[rgba(89,2,2,0.5)]"><span class="font-bold md:text-[1.125rem] lg:text-[1.25rem]">See More</span></a> 
                 
             </div>
             
         </section>
       
-        <!--Image-->
-        <div class="lg:h-[600px] h-[200px] bg-[url('assets/img/armazem.jpg')] bg-center bg-fixed bg-cover bg-no-repeat"></div>  
-        
+       
         <!--About us-->
-        <section id="about" class="bg-[#0D0D0D] px-12 py-8 mx-auto md:my-8 lg:my-16 text-center">
+        <section id="about" class="bg-[#0D0D0D]/60 px-12 py-8 mx-auto text-center">
             <h2 class="text-3xl font-extrabold text-center">About us</h2>
             
             <p class="md:my-8 lg:my-12 max-w-4xl text-justify my-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto">
@@ -221,9 +216,6 @@
                 We already organize a variety of events, from underground parties to outdoor festivals always aiming to provide unforgettable experiences for our participants.
             </p>
         </section>
-
-            
-        
     </main>
     
     <!--NewsLetter-->
@@ -281,8 +273,9 @@
 
         <h6 class="text-center text-sm py-3"><span class="font-sans">&reg</span> 2025 por Technoculture Portugal.</h6>
     </div>
-
+    
     <!--JavaScript general file-->
     <script src="js/index.js"></script>
+    
 </body>
 </html>
