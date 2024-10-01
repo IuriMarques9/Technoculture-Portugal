@@ -147,12 +147,22 @@
         
         <!--Next events-->
         <section id="nextEvents" class="bg-[#0D0D0D]/60 px-12 py-8">
-            <h2 class="text-3xl font-extrabold">Next events</h2>
+            <h2 class="text-center text-3xl font-extrabold">Next events</h2>
             
-            
+            <!--Carossel-->
+            <div class="flex justify-center items-center">
+                <div id="carossel-wrapper" class="w-full bg-green-200">
+                    <div id="carossel" class="flex bg-green-900">
+                        <div class=" bg-[url('assets/img/cartaz_olhao.jpg')] bg-cover bg-center bg-norepeat"></div>
+                        <div class=" bg-[url('assets/img/cartaz_olhao.jpg')] bg-cover bg-center bg-norepeat"></div>
+                        <div class=" bg-[url('assets/img/cartaz_olhao.jpg')] bg-cover bg-center bg-norepeat"></div>
+                        <div class=" bg-[url('assets/img/cartaz_olhao.jpg')] bg-cover bg-center bg-norepeat"></div>
+                    </div>
+                </div>
+            </div>
         </section>
         
-       
+        
         
         <!--Gallery-->
         <section id="gallery" class=" bg-[#0D0D0D]/60 px-12 py-8">
@@ -162,7 +172,7 @@
             
             
             <div class="flex flex-col items-center">
-
+                
                 <div class="my-5 flex flex-wrap justify-center gap-6 w-full">
                     <a href="#gallery" name="card" class="w-3/5 h-[180px] min-w-52 max-w-80">
                         <div class="rounded w-full h-full overflow-hidden inline-block cursor-pointer">
@@ -204,10 +214,10 @@
             </div>
             
         </section>
-      
-       
+        
+        
         <!--About us-->
-        <section id="about" class="bg-[#0D0D0D]/60 px-12 py-8 mx-auto text-center">
+        <section id="about" class="bg-[#0D0D0D]/60 px-12 py-8">
             <h2 class="text-3xl font-extrabold text-center">About us</h2>
             
             <p class="md:my-8 lg:my-12 max-w-4xl text-justify my-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto">
@@ -227,7 +237,7 @@
             
             <form action="https://formsubmit.co/ca8f37c56b4e913c117c7bc7d6b4f0f6" method="post" class="sm:flex-row flex flex-col gap-3 mb-4 w-full">
                 <input required name="Email" type="email" class="border-8 sm:w-3/4 shadow-inner bg-[rgba(38,1,1,0.2)] w-full indent-2 py-1 rounded-sm sm:w-full sm:text-md md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-md md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
-    
+                
                 <button onclick="document.querySelector('#newsletterSpinner').classList.replace('hidden', 'animate-spin')" type="submit" class=" md:text-[1.125rem] lg:text-[1.25rem] sm:w-1/4 btnfos btnfos-2 text-center bg-[rgba(38,1,1,0.2)] w-full">
                     <i id="newsletterSpinner" class="tracking-normal hidden fa-solid fa-spinner"></i> Subscribe
                 </button>
@@ -267,15 +277,14 @@
             </div>
         </div>
     </footer>
-
+    
     <div class="bg-[#260101] px-4">
         <hr class="border-[#8C0303] border-[0.5px]">
-
+        
         <h6 class="text-center text-sm py-3"><span class="font-sans">&reg</span> 2025 por Technoculture Portugal.</h6>
     </div>
     
     <!--JavaScript general file-->
     <script src="js/index.js"></script>
-    
 </body>
 </html>

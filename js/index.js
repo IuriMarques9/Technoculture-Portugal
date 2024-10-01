@@ -117,6 +117,9 @@ function openSidePanel(){
         sendEmailForm.classList.add('fade-right');
         sidePanelChevron.classList.replace('fa-chevron-up', 'fa-chevron-down');
     }
-}
+};
 //#endregion
 
+//#region Carossel from Events
+
+//#endregion

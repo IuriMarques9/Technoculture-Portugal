@@ -38,5 +38,22 @@ h2{
     background: linear-gradient(to bottom, rgba(38,1,1,1) 0%,rgba(101,2,2,1) 70%,rgba(107,2,2,0.7) 80%,rgba(140,3,3,0) 100%);
 }
 
+#carossel-wrapper{
+    max-width: 1200px;
+}
+#carossel-wrapper #carossel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: scroll;
+    white-space: nowrap;
+}
+#carossel div{
+    height: 300px;
+    object-fit: cover;
+    margin-left: 14px;
+    min-width: calc(100% / 3);
+}
 
-
+#carossel div:first-child{
+    margin-left:0px
+}
