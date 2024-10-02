@@ -125,10 +125,11 @@ function openSidePanel(){
 
 //#region Carossel from Events
 let scrollWidth = caroussel.scrollWidth - caroussel.clientWidth;
+let isDragStart = false, prevPageX, prevScrollLeft;
 
 const showHideIcons = () =>{
     carousselArrows[0].style.display = caroussel.scrollLeft == 0 ? "none" : "block";
-    carousselArrows[1].style.display = caroussel.scrollLeft == scrollWidth ? "none" : "block";
+    carousselArrows[1].style.display = caroussel.scrollLeft == scrollWidth  ? "none" : "block";
 }
 carousselArrows.forEach(icon => {
     icon.addEventListener("click", () => {
@@ -137,4 +138,35 @@ carousselArrows.forEach(icon => {
         setTimeout(() => showHideIcons(), 400);
     })
 });
+
+
+//Mobile Friendly
+    const dragStart = (e) =>{
+        isDragStart = true;
+        prevPageX = e.pageX || e.touches[0].pageX;
+        prevScrollLeft = caroussel.scrollLeft;
+    }
+
+    const dragging = (e) =>{
+        if(!isDragStart) return;
+        e.preventDefault();
+        caroussel.classList.add('dragging');
+        let positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+        caroussel.scrollLeft = prevScrollLeft - positionDiff;
+        showHideIcons();
+    }
+    const dragStop = (e) =>{
+        isDragStart = false;
+        caroussel.classList.remove('dragging');
+    }
+
+    caroussel.addEventListener("touchstart", dragStart);
+    caroussel.addEventListener("touchmove", dragging);
+    caroussel.addEventListener("touchend", dragStop);
+
+    caroussel.addEventListener("mousedown", dragStart);
+    caroussel.addEventListener("mousemove", dragging);
+    caroussel.addEventListener("mouseup", dragStop);
+
+
 //#endregion
