@@ -1,11 +1,11 @@
 //#region Initialized variables
-const logo = document.querySelector('#logo'); /*Logo*/
-const menuIconAndSocial = document.querySelector('#menuIconAndSocial'); /*Icon Menu*/
-const menuSocial = document.querySelector('#social');
-const header = document.getElementById('header'); /*Header*/
+const logo = document.querySelector('#logo'), /*Logo*/
+menuIconAndSocial = document.querySelector('#menuIconAndSocial'), /*Icon Menu*/
+menuSocial = document.querySelector('#social'),
+header = document.getElementById('header'); /*Header*/
 
-const navBiggerDevices = document.querySelector('#navBiggerDevices'); /*Nav for devices bigger than mobile */
-const navMobile = document.querySelector('#navMobile'); /*Nav for mobile */
+const navBiggerDevices = document.querySelector('#navBiggerDevices'), /*Nav for devices bigger than mobile */
+navMobile = document.querySelector('#navMobile'); /*Nav for mobile */
 
 const toTopButton = document.querySelector('#toTop'); /*Button to top*/
 
@@ -15,9 +15,12 @@ const divFooter = document.querySelector('#divFooter'); /*Footer separator left*
 
 const questions = document.getElementsByName('question'); /*Questions from FAQ's */
 
-const sendEmailForm = document.getElementById('contactUsAside'); /*Form from contact us FAQ's */
-const sidePanelChevron = document.getElementById('sidePanelChevron');  /*Chevron from side panel */
+const sendEmailForm = document.getElementById('contactUsAside'), /*Form from contact us FAQ's */
+sidePanelChevron = document.getElementById('sidePanelChevron');  /*Chevron from side panel */
 
+const caroussel = document.querySelector('#caroussel'),
+carousselArrows = document.querySelectorAll('#caroussel-wrapper i'),
+firstImg = caroussel.querySelectorAll('img')[0];
 //#endregion
 
 //#region On page load conditionals
@@ -121,5 +124,17 @@ function openSidePanel(){
 //#endregion
 
 //#region Carossel from Events
+let scrollWidth = caroussel.scrollWidth - caroussel.clientWidth;
 
+const showHideIcons = () =>{
+    carousselArrows[0].style.display = caroussel.scrollLeft == 0 ? "none" : "block";
+    carousselArrows[1].style.display = caroussel.scrollLeft == scrollWidth ? "none" : "block";
+}
+carousselArrows.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let firstImgWidth = firstImg.clientWidth + 14;
+        caroussel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+        setTimeout(() => showHideIcons(), 400);
+    })
+});
 //#endregion
