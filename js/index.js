@@ -18,9 +18,6 @@ const questions = document.getElementsByName('question'); /*Questions from FAQ's
 const sendEmailForm = document.getElementById('contactUsAside'), /*Form from contact us FAQ's */
 sidePanelChevron = document.getElementById('sidePanelChevron');  /*Chevron from side panel */
 
-const caroussel = document.querySelector('#caroussel'),
-carousselArrows = document.querySelectorAll('#caroussel-wrapper i'),
-firstImg = caroussel.querySelectorAll('img')[0];
 //#endregion
 
 //#region On page load conditionals
@@ -49,7 +46,7 @@ addEventListener("resize", () => {
     if(window.screen.width < 640 || window.innerWidth < 640){
         divFooter.classList.add('hidden'); //Hide left footer separator
         logo.src = "assets/img/logo.jpg"; //Change logo from top bar
-
+        
         menuIconAndSocial.classList.remove('hidden'); //Show hamburguer menu icone and social buttons from top bar
         navBiggerDevices.classList.add('hidden'); //Hide nav for bigger devices~
         
@@ -61,7 +58,7 @@ addEventListener("resize", () => {
         menuIconAndSocial.classList.add('hidden'); //Hide hamburguer menu icone and social buttons from top bar
         navBiggerDevices.classList.remove('hidden'); //Show nav for bigger devices
         navMobile.classList.add('hidden'); //Hide mobile nav when screen is bigger than mobile
-
+        
         menuSocial.classList.remove('hidden');
     }
 })
@@ -71,9 +68,9 @@ addEventListener("resize", () => {
 window.addEventListener('scroll',  function(){
     if(window.scrollY > 0){
         header.classList.add('bgHeaderScrollDown'); //Change header background color when scrolling to top
-
+        
         toTopButton.classList.remove('invisible'); //Show button to page top when scrolling to top
-
+        
     }else{
         header.classList.remove('bgHeaderScrollDown'); //Change header background color when scrolling to top
         
@@ -124,6 +121,11 @@ function openSidePanel(){
 //#endregion
 
 //#region Carossel from Events
+const caroussel = document.querySelector('#caroussel'),
+carousselArrows = document.querySelectorAll('#caroussel-wrapper i'),
+firstImg = caroussel.querySelectorAll('img')[0];
+
+
 let scrollWidth = caroussel.scrollWidth - caroussel.clientWidth;
 let isDragStart = false, prevPageX, prevScrollLeft;
 
@@ -135,38 +137,40 @@ carousselArrows.forEach(icon => {
     icon.addEventListener("click", () => {
         let firstImgWidth = firstImg.clientWidth + 14;
         caroussel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+        showHideIcons();
         setTimeout(() => showHideIcons(), 400);
     })
 });
 
 
 //Mobile Friendly
-    const dragStart = (e) =>{
-        isDragStart = true;
-        prevPageX = e.pageX || e.touches[0].pageX;
-        prevScrollLeft = caroussel.scrollLeft;
-    }
+const dragStart = (e) =>{
+    isDragStart = true;
+    prevPageX = e.pageX || e.touches[0].pageX;
+    prevScrollLeft = caroussel.scrollLeft;
+}
 
-    const dragging = (e) =>{
-        if(!isDragStart) return;
-        e.preventDefault();
-        caroussel.classList.add('dragging');
-        let positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-        caroussel.scrollLeft = prevScrollLeft - positionDiff;
-        showHideIcons();
-    }
-    const dragStop = (e) =>{
-        isDragStart = false;
+const dragging = (e) =>{
+    if(!isDragStart) return;
+    e.preventDefault();
+    caroussel.classList.add('dragging');
+    let positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    caroussel.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
+}
+const dragStop = (e) =>{
+    isDragStart = false;
         caroussel.classList.remove('dragging');
     }
-
+    
     caroussel.addEventListener("touchstart", dragStart);
     caroussel.addEventListener("touchmove", dragging);
     caroussel.addEventListener("touchend", dragStop);
-
+    
     caroussel.addEventListener("mousedown", dragStart);
     caroussel.addEventListener("mousemove", dragging);
     caroussel.addEventListener("mouseup", dragStop);
-
-
-//#endregion
+    
+    
+    //#endregion
+    
