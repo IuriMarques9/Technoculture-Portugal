@@ -19,7 +19,7 @@ const sendEmailForm = document.getElementById('contactUsAside'), /*Form from con
 sidePanelChevron = document.getElementById('sidePanelChevron');  /*Chevron from side panel */
 
 const carrousselArrows = document.querySelectorAll('#carroussel-wrapper i'),
-carroussel =  document.querySelector('#carroussel-wrapper');
+carroussel =  document.querySelector('#carroussel');
 //#endregion
 
 //#region On page load conditionals
@@ -35,15 +35,19 @@ if(window.screen.width < 640 || window.innerWidth < 640){
     menuIconAndSocial.classList.remove('hidden');  /*Icon Menu and Social buttons for mobile*/
     divFooter.classList.add('hidden'); //Hide footer separator
     menuSocial.classList.add('hidden');
-    
+
     carrousselArrows.forEach((arrow) => {
-        arrow.classList.toggle('hidden');
-    });
+        arrow.classList.add('hidden');
+    }); //Hide arrows from carroussel
 }else{
     logo.src = "assets/img/logo_grande.png"; /*Logo for devices bigger than mobile*/
     navBiggerDevices.classList.remove('hidden'); /*Icon Menu and Social buttons for bigger than mobile*/
     divFooter.classList.remove('hidden'); //Show footer separator
     menuSocial.classList.remove('hidden'); //Show footer separator
+    
+    carrousselArrows.forEach((arrow) => {
+        arrow.classList.remove('hidden');
+    }); //Show arrows from carroussel
 }
 //#endregion
 
@@ -60,7 +64,7 @@ addEventListener("resize", () => {
 
         carrousselArrows.forEach((arrow) => {
             arrow.classList.add('hidden');
-        });
+        }); //Hide arrows from carroussel
     }
     else{
         divFooter.classList.remove('hidden'); //Show left footer separator
@@ -73,7 +77,7 @@ addEventListener("resize", () => {
 
         carrousselArrows.forEach((arrow) => {
             arrow.classList.remove('hidden');
-        });
+        }); //Show arrows from carroussel
     }
 })
 //#endregion
@@ -135,6 +139,19 @@ function openSidePanel(){
 //#endregion
 
 //#region Carossel from Events
-
+carrousselArrows.forEach((arrow) => {
+    if(arrow.classList.contains('fa-chevron-right')){
+        arrow.addEventListener("click", () => {
+            console.log("arrow left");
+            carroussel.scrollLeft += 200;
+        });
+    }
+    else{
+        arrow.addEventListener("click", () => {
+            console.log("arrow right");
+            carroussel.scrollLeft -= 200;
+        });
+    }
+});
 //#endregion
     

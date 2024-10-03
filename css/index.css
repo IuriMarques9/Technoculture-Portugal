@@ -61,7 +61,6 @@ h2{
     cursor: pointer;
 }
 #carroussel-wrapper i:first-child{
-    display: none;
     left: -25px;
 }
 #carroussel-wrapper i:last-child{
