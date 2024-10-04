@@ -139,16 +139,15 @@ function openSidePanel(){
 //#endregion
 
 //#region Carossel from Events
+
 carrousselArrows.forEach((arrow) => {
     if(arrow.classList.contains('fa-chevron-right')){
         arrow.addEventListener("click", () => {
-            console.log("arrow left");
             carroussel.scrollLeft += 200;
         });
     }
     else{
         arrow.addEventListener("click", () => {
-            console.log("arrow right");
             carroussel.scrollLeft -= 200;
         });
     }
