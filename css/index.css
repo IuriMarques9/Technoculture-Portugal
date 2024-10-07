@@ -91,3 +91,14 @@ h2{
     width: 30px;
     opacity: 1;
 }
+
+/*Styles for Slider of reviews */
+#slider-reviews > div{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
