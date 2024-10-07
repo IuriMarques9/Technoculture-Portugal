@@ -146,26 +146,39 @@
         </section>
         
         <!--Next events-->
-        <section id="nextEvents" class="bg-[#260101]/40 px-12 pb-28 py-8">
+        <section id="nextEvents" class="bg-[#260101]/60 px-12 pb-28 py-8">
             <h2 class="text-center text-3xl font-extrabold">Next events</h2>
             
             <!--Carroussel-->
             <div id="carroussel-wrapper" class=" w-10/12 h-[250px] mt-20 mx-auto lg:max-w-[1200px] relative flex justify-center items-center">
                 <i id="left" class="transition ease-in-out duration-400 hover:scale-110 bg-gradient-to-l from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% fa-solid fa-chevron-left"></i>
-                <div id="carroussel" class="h-[300px] w-full overflow-x-scroll sm:overflow-x-hidden overflow-y-hidden whitespace-nowrap scroll-smooth snap-x snap-mandatory">
+                <div id="carroussel" class="h-[300px] w-full overflow-hidden whitespace-nowrap scroll-smooth snap-x snap-mandatory">
+                    <div></div>
                     <div class="hover:scale-110 transition ease-in-out duration-500 bg-[url('assets/img/evento1.jpg')] bg-cover bg-norepeat bg-center" onclick="window.location.assign('https://shotgun.live/pt-pt/venues/techno-culture-portugal')"></div>
                     <div class="hover:scale-110 transition ease-in-out duration-500 bg-[url('assets/img/evento2.jpg')] bg-cover bg-norepeat bg-center" onclick="window.location.assign('https://shotgun.live/pt-pt/venues/techno-culture-portugal')"></div>
                     <div class="hover:scale-110 transition ease-in-out duration-500 bg-[url('assets/img/evento3.jpg')] bg-cover bg-norepeat bg-center" onclick="window.location.assign('https://shotgun.live/pt-pt/venues/techno-culture-portugal')"></div>
                     <div class="hover:scale-110 transition ease-in-out duration-500 bg-[url('assets/img/evento1.jpg')] bg-cover bg-norepeat bg-center" onclick="window.location.assign('https://shotgun.live/pt-pt/venues/techno-culture-portugal')"></div>
                     <div class="hover:scale-110 transition ease-in-out duration-500 bg-[url('assets/img/evento2.jpg')] bg-cover bg-norepeat bg-center" onclick="window.location.assign('https://shotgun.live/pt-pt/venues/techno-culture-portugal')"></div>
                     <div class="hover:scale-110 transition ease-in-out duration-500 bg-[url('assets/img/evento3.jpg')] bg-cover bg-norepeat bg-center" onclick="window.location.assign('https://shotgun.live/pt-pt/venues/techno-culture-portugal')"></div>
+                    <div></div>
                 </div>
                 <i id="right" class="transition ease-in-out duration-400 hover:scale-110 bg-gradient-to-r from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% fa-solid fa-chevron-right"></i>
+            
+                
             </div>
+            
+            <ul id="carroussel-dots" class="flex gap-x-3 w-full mt-10 justify-center items-center">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </section>
         
         <!--Reviews-->
-        <section id="nextEvents" class="bg-[#590202]/40 px-12 py-8">
+        <section id="nextEvents" class="bg-[#0D0D0D]/60 px-12 py-8">
             <h2 class="text-center text-3xl font-extrabold">Reviews</h2>
             
             
@@ -224,7 +237,7 @@
         
         
         <!--About us-->
-        <section id="about" class="bg-[#590202]/40 px-12 py-8">
+        <section id="about" class="bg-[#0D0D0D]/40 px-12 py-8">
             <h2 class="text-3xl font-extrabold text-center">About us</h2>
             
             <p class="md:my-8 lg:my-12 max-w-4xl text-justify my-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto">

@@ -19,7 +19,10 @@ const sendEmailForm = document.getElementById('contactUsAside'), /*Form from con
 sidePanelChevron = document.getElementById('sidePanelChevron');  /*Chevron from side panel */
 
 const carrousselArrows = document.querySelectorAll('#carroussel-wrapper i'),
-carroussel =  document.querySelector('#carroussel');
+carroussel =  document.querySelector('#carroussel'),
+carrousselItems = document.querySelectorAll('#carroussel div')
+
+const dots = document.querySelectorAll('#carroussel-dots li');
 //#endregion
 
 //#region On page load conditionals
@@ -36,18 +39,16 @@ if(window.screen.width < 640 || window.innerWidth < 640){
     divFooter.classList.add('hidden'); //Hide footer separator
     menuSocial.classList.add('hidden');
 
-    carrousselArrows.forEach((arrow) => {
-        arrow.classList.add('hidden');
-    }); //Hide arrows from carroussel
+    carroussel.scrollLeft = 300;
+
 }else{
     logo.src = "assets/img/logo_grande.png"; /*Logo for devices bigger than mobile*/
     navBiggerDevices.classList.remove('hidden'); /*Icon Menu and Social buttons for bigger than mobile*/
     divFooter.classList.remove('hidden'); //Show footer separator
     menuSocial.classList.remove('hidden'); //Show footer separator
+
+    carroussel.scrollLeft = 150;
     
-    carrousselArrows.forEach((arrow) => {
-        arrow.classList.remove('hidden');
-    }); //Show arrows from carroussel
 }
 //#endregion
 
@@ -61,10 +62,6 @@ addEventListener("resize", () => {
         navBiggerDevices.classList.add('hidden'); //Hide nav for bigger devices~
         
         menuSocial.classList.add('hidden');
-
-        carrousselArrows.forEach((arrow) => {
-            arrow.classList.add('hidden');
-        }); //Hide arrows from carroussel
     }
     else{
         divFooter.classList.remove('hidden'); //Show left footer separator
@@ -74,10 +71,6 @@ addEventListener("resize", () => {
         navMobile.classList.add('hidden'); //Hide mobile nav when screen is bigger than mobile
         
         menuSocial.classList.remove('hidden');
-
-        carrousselArrows.forEach((arrow) => {
-            arrow.classList.remove('hidden');
-        }); //Show arrows from carroussel
     }
 })
 //#endregion
@@ -139,18 +132,44 @@ function openSidePanel(){
 //#endregion
 
 //#region Carossel from Events
+let active = 0;
 
 carrousselArrows.forEach((arrow) => {
     if(arrow.classList.contains('fa-chevron-right')){
         arrow.addEventListener("click", () => {
-            carroussel.scrollLeft += 200;
+            if(active <= carrousselItems.length -4){
+                carroussel.scrollLeft += 300;
+                active += 1;
+            }else{
+                active = carrousselItems.length -3;
+            }
+
+            reloadDots(active);
         });
     }
     else{
         arrow.addEventListener("click", () => {
-            carroussel.scrollLeft -= 200;
+            if(active > 0){
+                carroussel.scrollLeft -= 300;
+                active -= 1;
+            }else{
+                active = 0;
+            }
+
+            reloadDots(active);
         });
     }
 });
+
+function reloadDots(active){
+    dots.forEach((dot) => {
+        if(dot.classList.contains('active')){
+            dot.classList.remove('active');
+        }
+    })
+    dots[active].classList.add('active');
+};
+
+
 //#endregion
     

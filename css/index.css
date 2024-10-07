@@ -78,3 +78,16 @@ h2{
 #carroussel div:last-child{
     margin-right:0px;
 }
+#carroussel-dots li{
+    border-radius: 20px;
+    background-color: #8C0303;
+    width: 10px;
+    height: 10px;
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+
+}
+#carroussel-dots .active{
+    width: 30px;
+    opacity: 1;
+}
