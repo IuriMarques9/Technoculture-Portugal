@@ -176,7 +176,7 @@ function reloadDots(active){
 //#endregion
     
 //#region Testimonials slider
-setInterval(nextTestimonial, 5000);
+const testimonialInterval = setInterval(nextTestimonial, 5000);
 
 function nextTestimonial(){
     sliderWrapper.scrollLeft += 500;
@@ -189,20 +189,24 @@ function nextTestimonial(){
 sliderArrows.forEach((arrow) => {
     if(arrow.classList.contains('fa-angle-right')){
         arrow.addEventListener("click", () => {
+            clearInterval(testimonialInterval);
             if(sliderWrapper.scrollLeft < sliderWrapper.scrollWidth - sliderWrapper.clientWidth - 1){
                 sliderWrapper.scrollLeft += sliderWrapper.clientWidth;
             }else{
                 sliderWrapper.scrollLeft = 0;
             }
+            setInterval(nextTestimonial, 25000);
         });
     }
     else{
         arrow.addEventListener("click", () => {
+            clearInterval(testimonialInterval);
             if(sliderWrapper.scrollLeft == 0){
                 sliderWrapper.scrollLeft = sliderWrapper.scrollWidth;
             }else{
                 sliderWrapper.scrollLeft -= sliderWrapper.clientWidth;
             }
+            setInterval(nextTestimonial, 25000);
         });
     }
 });
