@@ -18,11 +18,14 @@ const questions = document.getElementsByName('question'); /*Questions from FAQ's
 const sendEmailForm = document.getElementById('contactUsAside'), /*Form from contact us FAQ's */
 sidePanelChevron = document.getElementById('sidePanelChevron');  /*Chevron from side panel */
 
-const carrousselArrows = document.querySelectorAll('#carroussel-wrapper i'),
-carroussel =  document.querySelector('#carroussel'),
-carrousselItems = document.querySelectorAll('#carroussel div')
+const carrousselArrows = document.querySelectorAll('#carroussel-wrapper i'), /* Carrousel arrows from next events */
+carroussel =  document.querySelector('#carroussel'), /* Carrousel from next events */
+carrousselItems = document.querySelectorAll('#carroussel div'); /* Carrousel items */
+const dots = document.querySelectorAll('#carroussel-dots li'); /* Carrousel nav dots */
 
-const dots = document.querySelectorAll('#carroussel-dots li');
+const sliderWrapper = document.querySelector('#slider-wrapper'), /*Slider wrapper from testimonials */
+sliderArrows = document.querySelectorAll('#slider-testimonials > i'); /*Slider arrows */
+
 //#endregion
 
 //#region On page load conditionals
@@ -170,6 +173,37 @@ function reloadDots(active){
     dots[active].classList.add('active');
 };
 
-
 //#endregion
     
+//#region Testimonials slider
+setInterval(nextTestimonial, 5000);
+
+function nextTestimonial(){
+    sliderWrapper.scrollLeft += 500;
+    if(sliderWrapper.scrollLeft < sliderWrapper.scrollWidth - sliderWrapper.clientWidth - 1){
+        sliderWrapper.scrollLeft += sliderWrapper.clientWidth;
+    }else{
+        sliderWrapper.scrollLeft = 0;
+    }
+}
+sliderArrows.forEach((arrow) => {
+    if(arrow.classList.contains('fa-angle-right')){
+        arrow.addEventListener("click", () => {
+            if(sliderWrapper.scrollLeft < sliderWrapper.scrollWidth - sliderWrapper.clientWidth - 1){
+                sliderWrapper.scrollLeft += sliderWrapper.clientWidth;
+            }else{
+                sliderWrapper.scrollLeft = 0;
+            }
+        });
+    }
+    else{
+        arrow.addEventListener("click", () => {
+            if(sliderWrapper.scrollLeft == 0){
+                sliderWrapper.scrollLeft = sliderWrapper.scrollWidth;
+            }else{
+                sliderWrapper.scrollLeft -= sliderWrapper.clientWidth;
+            }
+        });
+    }
+});
+//#endregion

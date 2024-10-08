@@ -85,7 +85,7 @@ h2{
     height: 10px;
     opacity: 0.6;
     transition: all 0.3s ease-in-out;
-
+    border: 1px solid #0D0D0D;
 }
 #carroussel-dots .active{
     width: 30px;
@@ -93,12 +93,31 @@ h2{
 }
 
 /*Styles for Slider of reviews */
-#slider-reviews > div{
-    height: 100%;
+#slider-wrapper > div{
     width: 100%;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+    text-align: center;
+    padding: 40px 50px;
+    background-color: rgba(38, 1, 1, 0.6);
+    border-radius: 15px;
+    scroll-snap-align: center;
+}
+#slider-wrapper > div > div{
+   margin: 0 auto;
+}
+#slider-testimonials > i{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+#slider-testimonials > i:first-child{
+    left: -25px;
+}
+#slider-testimonials > i:last-child{
+    right: -25px;
+}
+#slider-wrapper p i{
+    color: #8C0303;
 }
