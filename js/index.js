@@ -195,7 +195,6 @@ sliderArrows.forEach((arrow) => {
             }else{
                 sliderWrapper.scrollLeft = 0;
             }
-            setInterval(nextTestimonial, 25000);
         });
     }
     else{
@@ -206,7 +205,6 @@ sliderArrows.forEach((arrow) => {
             }else{
                 sliderWrapper.scrollLeft -= sliderWrapper.clientWidth;
             }
-            setInterval(nextTestimonial, 25000);
         });
     }
 });

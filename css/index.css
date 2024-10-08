@@ -85,7 +85,6 @@ h2{
     height: 10px;
     opacity: 0.6;
     transition: all 0.3s ease-in-out;
-    border: 1px solid #0D0D0D;
 }
 #carroussel-dots .active{
     width: 30px;
@@ -100,7 +99,7 @@ h2{
     display: inline-block;
     text-align: center;
     padding: 40px 50px;
-    background-color: rgba(38, 1, 1, 0.6);
+    background-color: rgba(38, 1, 1, 0.8);
     border-radius: 15px;
     scroll-snap-align: center;
 }
