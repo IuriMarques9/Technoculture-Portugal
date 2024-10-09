@@ -43,6 +43,7 @@ h2{
 .actualPage{
     text-decoration: underline solid white 1px;
     text-underline-offset: 2px;
+
 }
 
 .bgHeaderScrollDown, .bgHeaderColor{
