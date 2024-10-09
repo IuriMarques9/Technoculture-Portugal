@@ -28,7 +28,7 @@
 </head>
 <body>
     <header id="header" class=" z-50 md:gap-x-12 sm:gap-x-3 sm:px-3 md:px-8 sm:h-[100px] h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 items-center">
-        <a href="./index.html" class="sm:w-[150px] md:w-[200px] w-[30px] content-center cursor-pointer"><img class="w-full" id="logo" alt="Logo"></a>
+        <a href="./index.html" class=""><img class="sm:w-[150px] md:w-[200px] w-[30px] min-w-[100px] content-center cursor-pointer" id="logo" alt="Logo"></a>
 
         <div id="menuIconAndSocial" class="hidden flex gap-x-6">
             <div id="navSocial" class="sm:gap-x-3 lg:gap-x-4 flex justify-evenly gap-x-3">
@@ -42,28 +42,28 @@
         </div>
         
         <!--Nav for devices bigger than mobile-->
-        <div id="navBiggerDevices" class="hidden justify-end w-full flex items-center max-w-2xl gap-x-3">                
+        <div id="navBiggerDevices" class="hidden justify-end w-fit flex items-center max-w-2xl gap-x-3">                
             <a class="" href="#nextEvents">
-                <div class="px-5 w-fit sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Next events</span></div>
+                <div class="px-2 lg:px-5 w-fit sm:h-[30px] uppercase cursor-pointer tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] flex justify-center items-center"><span class="text-[0.5rem] sm:text-xs md:text-sm lg:text-base text-nowrap">Next events</span></div>
             </a>
             <a class="" href="#testimonials">
-                <div class="px-5 w-fit sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Testimonials</span></div>
+                <div class="px-2 lg:px-5 w-fit sm:h-[30px] uppercase cursor-pointer tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] flex justify-center items-center"><span class="text-[0.5rem] sm:text-xs md:text-sm lg:text-base text-nowrap">Testimonials</span></div>
             </a>
             <a class="" href="#about">
-                <div class="px-5 w-fit sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">About us</span></div>
+                <div class="px-2 lg:px-5 w-fit sm:h-[30px] uppercase cursor-pointer tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] flex justify-center items-center"><span class="text-[0.5rem] sm:text-xs md:text-sm lg:text-base text-nowrap">About us</span></div>
             </a>
             
             <div class="sm:h-[38px] border-[#260101] border"></div>
             
             
             <a class="actualPage" href="./index.html">
-                <div class="px-5 w-fit sm:h-[30px] uppercase tracking-widest transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class=" text-xs lg:text-base text-nowrap">Home</span></div>
+                <div class="px-2 lg:px-5 w-fit sm:h-[30px] uppercase tracking-widest transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class=" text-[0.5rem] sm:text-xs md:text-sm lg:text-base text-nowrap">Home</span></div>
             </a>
             <a class="" href="./gallery.html">
-                <div class="px-5 w-fit sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Gallery</span></div>
+                <div class="px-2 lg:px-5 w-fit sm:h-[30px] uppercase cursor-pointer tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101]  flex justify-center items-center"><span class="text-[0.5rem] sm:text-xs md:text-sm lg:text-base text-nowrap">Gallery</span></div>
             </a>
             <a class="" href="./faqs.html">
-                <div class="px-5 w-fit sm:h-[30px] uppercase cursor-pointer hover:scale-x-110 tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] w-3/4  flex justify-center items-center"><span class="text-xs lg:text-base text-nowrap">Faq's</span></div>
+                <div class="px-2 lg:px-5 w-fit sm:h-[30px] uppercase cursor-pointer tracking-widest hover:tracking-[3px] lg:hover:tracking-[5px] transition-all duration-500 ease-in-out border-2 border-[#260101] flex justify-center items-center"><span class="text-[0.5rem] sm:text-xs md:text-sm lg:text-base text-nowrap">Faq's</span></div>
             </a>
         </div>
     </header>
@@ -370,6 +370,8 @@
     </div>
     
     <!--JavaScript general file-->
+    <script src="js/general.js"></script>
+    <!--JavaScript index page file-->
     <script src="js/index.js"></script>
 </body>
 </html>
