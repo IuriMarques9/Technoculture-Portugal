@@ -36,6 +36,13 @@ div#cards-images div{
 }
 
 
+/*General*/
+#slider-images > div[name="arrows"], #slider-movies > div[name="arrows"]{
+    cursor: pointer;
+    
+}
+
+
 /*After Movies*/
 div#cards-movies div{
     width: 100%;
@@ -44,6 +51,7 @@ div#cards-movies div{
     display: inline-block;
     color: black;
 }
+
 
 /*Media Queries*/
 
