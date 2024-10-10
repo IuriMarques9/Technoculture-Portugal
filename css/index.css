@@ -1,0 +1,70 @@
+/*Styles for Caroussel*/
+#carroussel-wrapper i{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    line-height: 45px;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+}
+#carroussel-wrapper i:first-child{
+    left: -60px;
+}
+#carroussel-wrapper i:last-child{
+    right: -60px;
+}
+#carroussel div{
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    object-fit: cover;
+    display: inline-block;
+    scroll-snap-align: center;
+    cursor: pointer;
+}
+#carroussel div:last-child{
+    margin-right:0px;
+}
+#carroussel-dots li{
+    border-radius: 20px;
+    background-color: #8C0303;
+    width: 10px;
+    height: 10px;
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+}
+#carroussel-dots .active{
+    width: 30px;
+    opacity: 1;
+}
+
+/*Styles for Slider of reviews */
+#slider-wrapper > div{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+    text-align: center;
+    padding: 40px 50px;
+    background-color: rgba(38, 1, 1, 0.8);
+    border-radius: 15px;
+    scroll-snap-align: center;
+}
+#slider-wrapper > div > div{
+   margin: 0 auto;
+}
+#slider-testimonials > i{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+#slider-testimonials > i:first-child{
+    left: -25px;
+}
+#slider-testimonials > i:last-child{
+    right: -25px;
+}
+#slider-wrapper p i{
+    color: #8C0303;
+}

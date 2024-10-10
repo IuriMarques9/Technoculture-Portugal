@@ -8,12 +8,8 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/gallery.css">
 
-    <!--Css all animations-->
-    <link rel="stylesheet" href="css/animations.css">
-    
-    <!--Css all animated buttons-->
-    <link rel="stylesheet" href="css/animatedButtons.css">
     
     <!--'Gemunu Libre' from Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +22,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
-<body>
+<body class="min-w-[350px]">
     <header id="header" class="bgHeaderColor z-50 md:gap-x-12 sm:gap-x-3 sm:px-3 md:px-8 sm:h-[100px] h-[60px] w-full bg-transparent sticky top-0 flex justify-between p-4 z-5 items-center">
         <a href="./index.html" class="sm:w-[150px] md:w-[200px] w-[30px] content-center cursor-pointer"><img class="w-full" id="logo" alt="Logo"></a>
 
@@ -119,13 +115,123 @@
         </form>
     </aside>
 
-    
-    Content
+    <main class="xl:flex-row px-8 flex flex-col items-center mb-8 mt-4 gap-8">
+        <section class="bg-[#260101] rounded-md w-full p-6">
+            <h2 class="text-center text-3xl font-extrabold ">Gallery</h2>
+            
+            <!--Slider images-->
+            <h3>Images</h3>
+            <div id="slider-images" class="bg-green-900 w-full flex justify-between">
+                <div class="bg-[#590202] flex justify-center items-center">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
 
+                <div id="cards-images" class="overflow-hidden whitespace-nowrap grow">
+                    <div name="galleryCard">
+                        1
+                    </div>
+
+                    <div name="galleryCard">
+                        2
+                    </div>
+                    
+                    <div name="galleryCard">
+                        3
+                    </div>
+
+                    <div name="galleryCard">
+                        4
+                    </div>
+
+                    <div name="galleryCard">
+                        5
+                    </div>
+                    
+                    <div name="galleryCard">
+                        6
+                    </div>
+
+                    <div name="galleryCard">
+                        7
+                    </div>
+                </div>
+
+                <div class="bg-[#590202] flex justify-center items-center">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+
+            <!--Slider movies-->
+            <h3>Movies</h3>
+            <div id="slider-movies" class="bg-green-900 w-full flex justify-between">
+                <div class="bg-[#590202] flex justify-center items-center">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+                <div id="cards-movies" class="overflow-hidden whitespace-nowrap grow">
+                    <div name="galleryCard">
+                        1
+                    </div>
+
+                    <div name="galleryCard">
+                        2
+                    </div>
+                    
+                    <div name="galleryCard">
+                        3
+                    </div>
+
+                    <div name="galleryCard">
+                        4
+                    </div>
+
+                    <div name="galleryCard">
+                        5
+                    </div>
+                    
+                    <div name="galleryCard">
+                        6
+                    </div>
+
+                    <div name="galleryCard">
+                        7
+                    </div>
+                </div>
+
+                <div class="bg-[#590202] flex justify-center items-center">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--NewsLetter-->
+    <div id="newsletter" class="md:px-8 sm:px-3 bg-[#8C0303] px-4 py-6 translate-y-[1px]">
+        <div class="sm:items-start flex flex-col gap-y-4 max-w-7xl items-center">
+            <h2 class="text-3xl font-extrabold mt-2">Newsletter</h2>
+            
+            <p class="sm:text-lg lg:text-xl xl:text-2xl">Subscribe to our newsletter to stay up to date with the latest events and discounts.</p>
+            
+            <form action="https://formsubmit.co/ca8f37c56b4e913c117c7bc7d6b4f0f6" method="post" class="sm:flex-row flex flex-col gap-3 mb-4 w-full">
+                <input required name="Email" type="email" class="border-8 sm:w-3/4 shadow-inner bg-[rgba(38,1,1,0.2)] w-full indent-2 py-1 rounded-sm sm:w-full sm:text-md md:text-lg lg:text-xl xl:text-2xl sm:placeholder:text-md md:placeholder:text-lg lg:placeholder:text-xl xl:placeholder:text-2xl" placeholder="Email">
+                
+                <button onclick="document.querySelector('#newsletterSpinner').classList.replace('hidden', 'animate-spin')" type="submit" class=" md:text-[1.125rem] lg:text-[1.25rem] sm:w-1/4 btnfos btnfos-2 text-center bg-[rgba(38,1,1,0.2)] w-full">
+                    <i id="newsletterSpinner" class="tracking-normal hidden fa-solid fa-spinner"></i> Subscribe
+                </button>
+                
+                <input type="hidden" name="_next" value="https://iurimarques9.github.io/Technoculture-Portugal/newsletterSuccess.html">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_subject" value="Newsletter">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+            </form>
+        </div>
+    </div> 
 
     <!--Footer-->
     <footer class="bg-gradient-to-b from-[#8C0303] from-0% via-[#590202] via-50% to-[#260101] to-100% p-4 z-0 flex flex-col gap-y-8">
-        
+        <hr class="border-[#260101] border">
+
         <div id="logos" class="sm:flex sm:justify-around sm:gap-x-4">
             <img src="assets/img/logo_grande.png" class="w-[200px] sm:w-[150px] md:w-[200px] lg:w-[250px]" alt="Technoculture Logo">
             
