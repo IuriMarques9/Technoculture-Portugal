@@ -18,8 +18,13 @@ div#cards-images div img{
     transition: all 0.25s ease-in-out ;
 }
 div#cards-images div img:hover{
-    scale: 1.10;
     cursor: pointer;
+}
+
+div#cards-images div div{
+    position: absolute;
+    top: 0;
+    background-color: rgba(13, 13, 13, 0.5);
 }
 /*Media Queries*/
 

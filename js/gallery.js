@@ -1,5 +1,7 @@
 const images = document.querySelector('#cards-images'),
-movies = document.querySelector('#cards-movies');
+imagesCollection = images.querySelectorAll('#cards-images > div');
+
+const movies = document.querySelector('#cards-movies');
 
 let imagesAutomaticScroll;
 let moviesAutomaticScroll;
@@ -60,6 +62,18 @@ imageArrows.forEach((arrow) => {
         return;
     }
 })
+
+
+imagesCollection.forEach((colection) => { //Show/hide info from images collections and scale background images
+    colection.addEventListener('mouseover', () => {
+        colection.lastElementChild.classList.replace('invisible', 'visible');
+        colection.firstElementChild.classList.add('scale-110');
+    })
+    colection.addEventListener('mouseout', () => {
+        colection.lastElementChild.classList.replace('visible', 'invisible');
+        colection.firstElementChild.classList.remove('scale-110');
+    })
+});
 
 const movieArrows = document.querySelectorAll('#slider-movies > div');
 
