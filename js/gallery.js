@@ -1,5 +1,5 @@
 const images = document.querySelector('#cards-images'),
-imagesCollection = images.querySelectorAll('#cards-images > div');
+imagesCollection = images.querySelectorAll('#cards-images > div.card');
 
 const movies = document.querySelector('#cards-movies');
 
@@ -63,14 +63,13 @@ imageArrows.forEach((arrow) => {
     }
 })
 
-
 imagesCollection.forEach((colection) => { //Show/hide info from images collections and scale background images
     colection.addEventListener('mouseover', () => {
-        colection.lastElementChild.classList.replace('invisible', 'visible');
+        colection.lastElementChild.classList.remove('translate-y-[80%]');
         colection.firstElementChild.classList.add('scale-110');
     })
     colection.addEventListener('mouseout', () => {
-        colection.lastElementChild.classList.replace('visible', 'invisible');
+        colection.lastElementChild.classList.add('translate-y-[80%]');
         colection.firstElementChild.classList.remove('scale-110');
     })
 });

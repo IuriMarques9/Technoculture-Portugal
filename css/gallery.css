@@ -1,5 +1,5 @@
 /*Images*/
-div#cards-images div{
+div#cards-images div.card{
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -9,46 +9,66 @@ div#cards-images div{
     margin-right: 15px;
     overflow: hidden;
 }
-div#cards-images div:last-child{
+div#cards-images div.card:last-child{
     margin-right: 0;
 }
-div#cards-images div img{
+div#cards-images div.card img{
     width: 100%;
     height: 100%;
     transition: all 0.25s ease-in-out ;
 }
-div#cards-images div img:hover{
+div#cards-images div.card img:hover{
     cursor: pointer;
 }
-
-div#cards-images div div{
+div#cards-images div.card div.cardInfo{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(89, 2, 2, 0.8);
     position: absolute;
     top: 0;
-    background-color: rgba(13, 13, 13, 0.5);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
 }
+
+div#cards-images div.card div.cardInfo div{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 9px;
+}
+div#cards-images div.card div.cardInfo ul li{
+    font-size: 0.7rem;
+    margin-bottom: 1px;
+}
+
 /*Media Queries*/
 
 @media only screen and (min-width: 640px) {
-    div#cards-images div{
+    div#cards-images div.card, 
+    div#cards-images div.card div.cardInfo{
         width: calc(100% / 2);
     }
-    
 }
 @media only screen and (min-width: 768px) {
-    div#cards-images div{
+    div#cards-images div.card, 
+    div#cards-images div.card div.cardInfo{
         width: calc(100% / 3);
     }
     
 }
 @media only screen and (min-width: 1024px) {
-    div#cards-images div{
+    div#cards-images div.card,
+    div#cards-images div.card div.cardInfo{
         width: calc(100% / 4);
     }
     
 
 }
 @media only screen and (min-width: 1280px) {
-    div#cards-images div{
+    div#cards-images div.card,
+    div#cards-images div.card div.cardInfo{
         width: calc(100% / 5);
     }
     
