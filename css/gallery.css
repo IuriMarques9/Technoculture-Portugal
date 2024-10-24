@@ -32,12 +32,20 @@ div#cards-images div.card div.cardInfo{
 div#cards-images div.card div.cardInfo div{
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: baseline;
     margin-bottom: 9px;
 }
 div#cards-images div.card div.cardInfo ul li{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     margin-bottom: 1px;
+}
+
+div#cards-images div.card div.cardInfo h3{
+    font-size: 0.7em;
+}
+div#cards-images div.card div.cardInfo h4{
+    font-size: 0.5rem;
+    color: rgb(178, 184, 193);
 }
 
 /*Media Queries*/
@@ -47,6 +55,7 @@ div#cards-images div.card div.cardInfo ul li{
     div#cards-images div.card div.cardInfo{
         width: calc(100% / 2);
     }
+
 }
 @media only screen and (min-width: 768px) {
     div#cards-images div.card, 
@@ -54,6 +63,15 @@ div#cards-images div.card div.cardInfo ul li{
         width: calc(100% / 3);
     }
     
+    div#cards-images div.card div.cardInfo ul li{
+        font-size: 0.8rem;
+    }
+    div#cards-images div.card div.cardInfo h3{
+        font-size: 0.9em;
+    }
+    div#cards-images div.card div.cardInfo h4{
+        font-size: 0.7rem;
+    }
 }
 @media only screen and (min-width: 1024px) {
     div#cards-images div.card,

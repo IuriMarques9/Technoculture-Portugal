@@ -42,11 +42,11 @@ imageArrows.forEach((arrow) => {
         arrow.addEventListener('mouseover', () => {
             if(arrow.firstElementChild.classList.contains('fa-angle-left')){
                 clearInterval(imagesAutomaticScroll);
-                imageLeftArrowScroll = setInterval(() => {images.scrollLeft -= 3} ,10)
+                imageLeftArrowScroll = setInterval(() => {images.scrollLeft -= 2} ,10)
             }
             else{
                 clearInterval(imagesAutomaticScroll);
-                imageRightArrowScroll = setInterval(() => {images.scrollLeft += 3} ,10)
+                imageRightArrowScroll = setInterval(() => {images.scrollLeft += 2} ,10)
             }
         });
         
@@ -65,11 +65,11 @@ imageArrows.forEach((arrow) => {
 
 imagesCollection.forEach((colection) => { //Show/hide info from images collections and scale background images
     colection.addEventListener('mouseover', () => {
-        colection.lastElementChild.classList.remove('translate-y-[80%]');
+        colection.lastElementChild.classList.remove('translate-y-[85%]');
         colection.firstElementChild.classList.add('scale-110');
     })
     colection.addEventListener('mouseout', () => {
-        colection.lastElementChild.classList.add('translate-y-[80%]');
+        colection.lastElementChild.classList.add('translate-y-[85%]');
         colection.firstElementChild.classList.remove('scale-110');
     })
 });
@@ -84,11 +84,11 @@ movieArrows.forEach((arrow) => {
         arrow.addEventListener('mouseover', () => {
             if(arrow.firstElementChild.classList.contains('fa-angle-left')){
                 clearInterval(moviesAutomaticScroll);
-                movieLeftArrowScroll = setInterval(() => {movies.scrollLeft -= 3} ,10)
+                movieLeftArrowScroll = setInterval(() => {movies.scrollLeft -= 2} ,10)
             }
             else{
                 clearInterval(moviesAutomaticScroll);
-                movieRightArrowScroll = setInterval(() => {movies.scrollLeft += 3} ,10)
+                movieRightArrowScroll = setInterval(() => {movies.scrollLeft += 2} ,10)
             }
         });
 
